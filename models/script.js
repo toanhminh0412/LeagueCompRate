@@ -1,4 +1,5 @@
-const fs = require('fs');
-fs.writeFileSync('note.txt', 'Hello there');
+const obj = require('./champions');
+const { anotherTest, testing } = require('./champions');
 
-console.log('Hello World');
+testing();
+anotherTest();
