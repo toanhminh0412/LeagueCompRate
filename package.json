@@ -1,0 +1,23 @@
+{
+    "name": "leaguecomprate",
+    "version": "1.0.0",
+    "description": "league of legends project",
+    "main": "script.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toanhminh0412/LeagueCompRate.git"
+    },
+    "author": "Minh To",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/toanhminh0412/LeagueCompRate/issues"
+    },
+    "homepage": "https://github.com/toanhminh0412/LeagueCompRate#readme",
+    "dependencies": {
+        "html-loader": "^1.1.0",
+        "html-webpack-plugin": "^4.3.0"
+    }
+}
