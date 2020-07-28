@@ -1,4 +1,4 @@
-class Champion {
+export class Champion {
     constructor(name, attr, teamcomp, tags) {
         this.name = name;
         this.attr = attr;
@@ -7,7 +7,7 @@ class Champion {
     }
 }
 
-class TeamComp {
+export class TeamComp {
     constructor(champions) {
         this.champions = champions;
     }
@@ -23,6 +23,8 @@ class TeamComp {
         this.pokeScore();
         // Calculate split score of the comp 
         this.splitScore();
+        // Calculate the first two main attributes of the comp
+        this.mainAttributes();
     }
 
     teamFightScore() {
@@ -407,6 +409,73 @@ class TeamComp {
         this.split = sScore;
     }
 
-}
+    mainAttributes() {
+        let attrArr = [this.teamfight, this.pick, this.hyperCarry, this.poke, this.split];
+        let attrMax = this.teamfight;
+        let indMax = 0;
+        this.firstMainAttr = ['teamfight', this.teamfight];
 
-module.exports = { Champion, TeamComp };
+        // Look for first main attributes
+        for (let i = 0; i < attrArr.length; i++) {
+            if (attrArr[i] > attrMax) {
+                attrMax = attrArr[i];
+                indMax = i;
+                if (i === 0) {
+                    this.firstMainAttr = ['teamfight', this.teamfight];
+                } else if (i === 1) {
+                    this.firstMainAttr = ['pick', this.pick];
+                } else if (i === 2) {
+                    this.firstMainAttr = ['hypercarry', this.hyperCarry];
+                } else if (i === 3) {
+                    this.firstMainAttr = ['poke', this.poke];
+                } else {
+                    this.firstMainAttr = ['split', this.split];
+                }
+            }
+        }
+
+        // Look for second main attributes
+        attrArr.splice(indMax, 1);
+        let attrMax2 = attrArr[0];
+        for (let i = 0; i < attrArr.length; i++) {
+            if (attrArr[i] > attrMax2) {
+                attrMax2 = attrArr[i];
+            }
+        }
+        if (attrMax2 === attrMax) {
+            attrArr = [this.teamfight, this.pick, this.hyperCarry, this.poke, this.split];
+            let count = 0;
+            for (let i = 0; i < attrArr.length; i++) {
+                if (attrArr[i] === attrMax2 && count === 1) {
+                    if (i === 0) {
+                        this.secondMainAttr = ['teamfight', attrMax2];
+                    } else if (i === 1) {
+                        this.secondMainAttr = ['pick', attrMax2];
+                    } else if (i === 2) {
+                        this.secondMainAttr = ['hypercarry', attrMax2];
+                    } else if (i === 3) {
+                        this.secondMainAttr = ['poke', attrMax2];
+                    } else if (i === 4) {
+                        this.secondMainAttr = ['split', attrMax2];
+                    }
+                }
+                if (attrArr[i] === attrMax) {
+                    count++;
+                }
+            }
+        } else {
+            if (attrMax2 === this.teamfight) {
+                this.secondMainAttr = ['teamfight', attrMax2];
+            } else if (attrMax2 === this.pick) {
+                this.secondMainAttr = ['pick', attrMax2];
+            } else if (attrMax2 === this.hyperCarry) {
+                this.secondMainAttr = ['hypercarry', attrMax2];
+            } else if (attrMax2 === this.poke) {
+                this.secondMainAttr = ['poke', attrMax2];
+            } else if (attrMax2 === this.split) {
+                this.secondMainAttr = ['split', attrMax2];
+            }
+        }
+    }
+
+}

@@ -1,5 +1,4 @@
-const { Champion, TeamComp } = require('./obj');
-
+import { Champion } from './obj';
 const attrox = new Champion('Attrox', {
     'Damage': ['Both', 'S'],
     'Toughness': ['Sustain', 'A'],
@@ -2222,7 +2221,7 @@ const zyra = new Champion('Zyra', {
 }, ['cat', 'bat']);
 
 
-const champions = {
+export const champions = {
     'attrox': attrox,
     'ahri': ahri,
     'akali': akali,
@@ -2232,7 +2231,7 @@ const champions = {
     'annie': annie,
     'aphelios': aphelios,
     'ashe': ashe,
-    'aurelionSol': aurelionSol,
+    'aurelionsol': aurelionSol,
     'azir': azir,
     'bard': bard,
     'bliztcrank': blitzcrank,
@@ -2246,7 +2245,7 @@ const champions = {
     'darius': darius,
     'diana': diana,
     'draven': draven,
-    'drMundo': drMundo,
+    'drmundo': drMundo,
     'ekko': ekko,
     'elise': elise,
     'evelyn': evelyn,
@@ -2294,8 +2293,8 @@ const champions = {
     'malphite': malphite,
     'malzahar': malzahar,
     'maokai': maokai,
-    'masterYi': masterYi,
-    'missFortune': missFortune,
+    'masteryi': masterYi,
+    'missfortune': missFortune,
     'wukong': wukong,
     'morderkaiser': morderkaiser,
     'morgana': morgana,
@@ -2337,7 +2336,7 @@ const champions = {
     'swain': swain,
     'sylas': sylas,
     'syndra': syndra,
-    'tahmKench': tahmKench,
+    'tahmkench': tahmKench,
     'taliyah': taliyah,
     'talon': talon,
     'taric': taric,
@@ -2346,7 +2345,7 @@ const champions = {
     'tristana': tristana,
     'trundle': trundle,
     'tryndamere': tryndamere,
-    'twistedFate': twistedFate,
+    'twistedfate': twistedFate,
     'twitch': twitch,
     'udyr': udyr,
     'urgot': urgot,
@@ -2361,7 +2360,7 @@ const champions = {
     'warwick': warwick,
     'xayah': xayah,
     'xerath': xerath,
-    'xinZhao': xinZhao,
+    'xinzhao': xinZhao,
     'yasuo': yasuo,
     'yorick': yorick,
     'yuumi': yuumi,
@@ -2372,9 +2371,3 @@ const champions = {
     'zoe': zoe,
     'zyra': zyra
 }
-
-module.exports = champions;
-
-// const blueTeamComp = new TeamComp([attrox, ahri, alistar, amumu, akali]);
-// blueTeamComp.teamcompScore();
-// console.log(blueTeamComp);
