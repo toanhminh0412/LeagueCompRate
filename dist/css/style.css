@@ -1,0 +1,711 @@
+/*
+Purple: #4B0082
+Orange: #ff9933
+Blue: 	#00BFFF
+Dark Blue: #00008B
+Blue team: #5DADE2
+Red team: #FF0000;
+*/
+
+
+/*---------------------------------*/
+
+
+/* Basic SETUP */
+
+
+/*----------------------------------*/
+
+* {
+    /* Basic setup for any webpage */
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* the width and heigh properties includes content, padding and border */
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* incase user Internet is slow, unable to load Lato, Arial will be used */
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /* make the font rendered in a perfect way */
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+
+/* the clearfix class clear the float of the element, can be used in any situation  */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*---------------------------------*/
+
+
+/* REUSABLE COMPONENT */
+
+
+/*----------------------------------*/
+
+.row {
+    /* can be used in different website design*/
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*-----------------*/
+
+
+/* NAVIGATION BAR  */
+
+
+/*-----------------*/
+
+.nav-bar {
+    list-style: none;
+    background-color: #4B0082;
+    height: 50px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-left: 220px;
+    padding-top: 10px;
+}
+
+.nav-bar li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+    border-bottom: 3px solid #ff9933;
+    color: #ff9933;
+}
+
+
+/*------------------*/
+
+
+/* DRAFT INTERFACE  */
+
+
+/*------------------*/
+
+.pro-game-interface {
+    margin-top: 0px;
+}
+
+
+/* TEAM INFO */
+
+.team-info {
+    height: 110px;
+    position: relative;
+}
+
+.team-info .blue-team {
+    background-color: #00BFFF;
+    height: 100%;
+    background-image: url(../img/team/cropped_cloud9_logo.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.team-name {
+    text-align: center;
+}
+
+.team-info .blue-team .team-name h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+}
+
+.team-score {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    opacity: 0.7;
+    text-align: center;
+}
+
+.team-score p {
+    color: #fff;
+}
+
+.blue-team {
+    border: 1px solid #000;
+    width: 30%;
+}
+
+.team-coach {
+    border-top: 1px solid #000;
+}
+
+.team-coach p {
+    color: #fff;
+}
+
+.blue-team .team-coach p {
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+}
+
+.team-info .score {
+    background-color: #000;
+    height: 100%;
+    width: 40%;
+}
+
+.team-info .score .cur-score {
+    text-align: center;
+}
+
+.team-info .score .cur-score h1 {
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.team-info .score-box {
+    width: 60%;
+}
+
+.time {
+    text-align: center;
+    background-color: #A9A9A9;
+    height: 100%;
+    width: 20%;
+    border: 1px solid #000;
+}
+
+.time h1 {
+    color: #fff;
+    font-size: 230%;
+    margin-top: 20%;
+}
+
+.patch {
+    text-align: center;
+}
+
+.patch p {
+    color: #fff;
+    font-size: 80%;
+    padding-bottom: 1.5%;
+}
+
+.phase {
+    text-align: center;
+    background-color: #A9A9A9;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.phase p {
+    color: #fff;
+    font-size: 80%;
+}
+
+.team-info .red-team {
+    background-color: #00008B;
+    height: 100%;
+    background-image: url(../img/team/team-liquid-logo-AC6053E709-seeklogo.com.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.team-info .red-team h1 {
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.red-team {
+    border: 1px solid #000;
+    width: 30%
+}
+
+.red-team .team-coach p {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+}
+
+
+/* PICKS INFO */
+
+.picks-info {
+    margin-top: 0px;
+}
+
+.blue-team-picks {
+    width: 20%;
+    margin-top: -15px;
+}
+
+.red-team-picks {
+    width: 20%;
+    margin-top: -15px;
+}
+
+.picks {
+    list-style: none;
+}
+
+.picks li {
+    height: 120px;
+    position: relative;
+}
+
+.blue-team-picks .first-pick {
+    background-image: url(../img/champions/Aatrox_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-team-picks .first-pick {
+    background-image: url(../img/champions/Ahri_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-team-picks .second-pick {
+    background-image: url(../img/champions/Akali_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-team-picks .second-pick {
+    background-image: url(../img/champions/AurelionSol_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-team-picks .third-pick {
+    background-image: url(../img/champions/Azir_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-team-picks .third-pick {
+    background-image: url(../img/champions/Darius_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-team-picks .fourth-pick {
+    background-image: url(../img/champions/Fiddlesticks_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-team-picks .fourth-pick {
+    background-image: url(../img/champions/Fiora_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-team-picks .fifth-pick {
+    background-image: url(../img/champions/Fizz_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.red-team-picks .fifth-pick {
+    background-image: url(../img/tiles/Zyra_0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-sum-1,
+.blue-sum-2,
+.blue-sum-3,
+.blue-sum-4,
+.blue-sum-5 {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.red-sum-1,
+.red-sum-2,
+.red-sum-3,
+.red-sum-4,
+.red-sum-5 {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+
+/* CENTER INFO */
+
+.center-image {
+    width: 60%;
+    height: 600px;
+    margin-top: -15px;
+    background-image: url(../img/bg/lolbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blue-info h1 {
+    color: #fff;
+}
+
+.blue-info {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.red-info h1 {
+    color: #fff;
+}
+
+.red-info {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.blue-stats {
+    margin-top: 10%;
+    list-style: none;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.blue-stats li {
+    color: #5DADE2;
+    padding-bottom: 5%;
+    font-size: 125%;
+}
+
+.blue-stats span {
+    border: 1px solid #5DADE2;
+    color: #5DADE2;
+    background-color: black;
+    font-size: 125%;
+    padding: 1%;
+}
+
+.rec-blue-picks {
+    text-align: left;
+    margin-top: 5%;
+}
+
+.rec-blue-picks p {
+    color: #5DADE2;
+    font-size: 125%;
+    margin-left: 25%;
+}
+
+.rec-blue-picks ul {
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.rec-blue-picks ul li {
+    display: inline-block;
+    padding-right: 10%;
+}
+
+.rec-blue-picks ul li img {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #000;
+}
+
+.teamfight span {
+    margin-left: 15%;
+}
+
+.pick span {
+    margin-left: 33%;
+}
+
+.hypercarry span {
+    margin-left: 10%;
+}
+
+.poke span {
+    margin-left: 30.5%;
+}
+
+.split span {
+    margin-left: 32%;
+}
+
+.red-stats {
+    margin-top: 10%;
+    list-style: none;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.red-stats li {
+    color: #FF0000;
+    padding-bottom: 5%;
+    font-size: 125%;
+}
+
+.red-stats span {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: black;
+    font-size: 125%;
+    padding: 1%;
+}
+
+.rec-red-picks {
+    text-align: left;
+    margin-top: 5%;
+}
+
+.rec-red-picks p {
+    color: #FF0000;
+    font-size: 125%;
+    margin-left: 25%;
+}
+
+.rec-red-picks ul {
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.rec-red-picks ul li {
+    display: inline-block;
+    padding-right: 10%;
+}
+
+.rec-red-picks ul li img {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #000;
+}
+
+
+/* BAN TITLE */
+
+.ban-titles {
+    margin-top: -15px;
+}
+
+.blue-ban-title {
+    margin-top: -15px;
+    width: 20%;
+    background-color: #00BFFF;
+    border: 1px solid #000;
+}
+
+.blue-ban-title p {
+    bottom: 0px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 80%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.analysis {
+    margin-top: -15px;
+    width: 60%;
+    background-color: #00BFFF;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.analysis p {
+    bottom: 0px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 80%;
+    text-align: center;
+}
+
+.red-ban-title {
+    margin-top: -15px;
+    width: 20%;
+    background-color: #00008B;
+    border: 1px solid #000;
+}
+
+.red-ban-title p {
+    bottom: 0px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 80%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+
+/* BAN INFO */
+
+.ban-info {
+    margin-top: -15px;
+}
+
+.blue-bans {
+    background-color: #000;
+    width: 20%;
+    margin-top: -15px;
+}
+
+.blue-bans p {
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+    font-size: 80%;
+}
+
+.blue-bans p:first-child {
+    margin-top: 19%;
+    margin-right: 5%;
+    margin-left: 5%
+}
+
+.blue-ban-text {
+    margin-top: 19%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.blue-bans ul li {
+    display: inline-block;
+}
+
+.blue-bans li img {
+    width: 60px;
+    height: 60px;
+    transform: skewX(10deg);
+}
+
+.phase1-blue-bans {
+    margin-top: 5%;
+}
+
+.phase2-blue-bans {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.red-bans {
+    background-color: #000;
+    width: 20%;
+    margin-top: -15px;
+}
+
+.red-bans p {
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    font-size: 80%;
+}
+
+.red-bans p:first-child {
+    margin-top: 19%;
+    margin-right: 5%;
+}
+
+.red-ban-text {
+    margin-top: 19%;
+    margin-right: 5%;
+}
+
+.red-bans ul li {
+    display: inline-block;
+}
+
+.red-bans li img {
+    width: 60px;
+    height: 60px;
+    transform: skewX(-10deg);
+}
+
+.phase1-red-bans {
+    margin-top: 5%;
+    margin-left: 7.5%;
+}
+
+.phase2-red-bans {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+
+.analysis-stat {
+    width: 60%;
+    margin-top: -15px;
+    background-color: #000;
+    height: 175px;
+}
+
+.champ-pic {
+    width: 30%;
+}
+
+.champ-pic img {
+    height: 175px;
+}
+
+.teamfight-score,
+.pick-score,
+.hypercarry-score,
+.poke-score,
+.split-score {
+    width: 14%;
+    text-align: center;
+}
+
+.teamfight-score p,
+.pick-score p,
+.hypercarry-score p,
+.poke-score p,
+.split-score p {
+    color: #fff;
+    margin-top: 10%;
+}
+
+.teamfight-stat,
+.pick-stat,
+.hypercarry-stat,
+.poke-stat,
+.split-stat {
+    font-size: 350%;
+    margin-top: -5%;
+}
+
+.teamfight-score,
+.pick-score,
+.hypercarry-score,
+.poke-score {
+    border-right: 1px solid #fff;
+}

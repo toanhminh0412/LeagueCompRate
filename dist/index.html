@@ -5,11 +5,266 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeagueCompRate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+    <nav>
+        <ul class='nav-bar'>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Dashboard</a></li>
+            <li><a href='#'>Pro Game</a></li>
+            <li><a href='#'>Solo Queue</a></li>
+        </ul>
+    </nav>
 
-    <script src='js/bundle.js'></script>
+    <div class='pro-game-interface clearfix'>
+        <div class='team-info clearfix'>
+            <div class='col blue-team'>
+                <div class='team-name'>
+                    <h1>CLOUD9</h1>
+                </div>
+                <div class='team-score'>
+                    <p>11-3</p>
+                </div>
+                <div class='team-coach'>
+                    <p>COACH: Bok Han-gyu</p>
+                </div>
+            </div>
+
+            <div class='col score'>
+                <div class='col time'>
+                    <h1>:30</h1>
+                </div>
+
+                <div class='col score-box'>
+                    <div class='cur-score'>
+                        <h1>1 &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; 1</h1>
+                    </div>
+
+                    <div class='patch'>
+                        <p>Patch 10.14</p>
+                    </div>
+
+                    <div class='phase'>
+                        <p>Pick Phase 2</p>
+                    </div>
+                </div>
+
+                <div class='col time'>
+                    <h1>:30</h1>
+                </div>
+
+            </div>
+
+            <div class='col red-team'>
+                <div class='team-name'>
+                    <h1>TEAM LIQUID</h1>
+                </div>
+
+                <div class='team-score'>
+                    <p>11-3</p>
+                </div>
+
+                <div class='team-coach'>
+                    <p>COACH: Joshua Leesman</p>
+                </div>
+
+            </div>
+            <div class='pick-interface'>
+
+            </div>
+            <div class='ban-interface'>
+
+            </div>
+        </div>
+
+        <div class='picks-info clearfix'>
+
+            <div class='col blue-team-picks'>
+                <ul class='picks'>
+                    <li class='first-pick'>
+                        <p class='blue-sum-1'>C9 Licorice</p>
+                    </li>
+                    <li class='second-pick'>
+                        <p class='blue-sum-2'>C9 Blaber</p>
+                    </li>
+                    <li class='third-pick'>
+                        <p class='blue-sum-3'>C9 Nisqy</p>
+                    </li>
+                    <li class='fourth-pick'>
+                        <p class='blue-sum-4'>C9 Zven</p>
+                    </li>
+                    <li class='fifth-pick'>
+                        <p class='blue-sum-5'>C9 Vulcan</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='col center-image'>
+                <div class='col span_1_of_2 blue-info'>
+                    <h1>Blue team</h1>
+
+                    <ul class='blue-stats'>
+                        <li class='teamfight'>Teamfight : <span>50</span></li>
+                        <li class='pick'>Pick : <span>50</span></li>
+                        <li class='hypercarry'>Hypercarry : <span>50</span></li>
+                        <li class='poke'>Poke : <span>50</span></li>
+                        <li class='split'>Split : <span>50</span></li>
+                    </ul>
+
+                    <div class='rec-blue-picks'>
+                        <p>Recommend picks: </p>
+                        <ul class='champs-img'>
+                            <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                            <li><img src='img/tiles/Akali_0.jpg' alt='Akali'></li>
+                            <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class='col span_1_of_2 red-info'>
+                    <h1>Red team</h1>
+
+                    <ul class='red-stats'>
+                        <li class='teamfight'>Teamfight : <span>50</span></li>
+                        <li class='pick'>Pick : <span>50</span></li>
+                        <li class='hypercarry'>Hypercarry : <span>50</span></li>
+                        <li class='poke'>Poke : <span>50</span></li>
+                        <li class='split'>Split : <span>50</span></li>
+                    </ul>
+
+                    <div class='rec-red-picks'>
+                        <p>Recommend picks: </p>
+                        <ul class='champs-img'>
+                            <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                            <li><img src='img/tiles/Akali_0.jpg' alt='Akali'></li>
+                            <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class='col red-team-picks'>
+                <ul class='picks'>
+                    <li class='first-pick'>
+                        <p class='red-sum-1'>TL Impact</p>
+                    </li>
+                    <li class='second-pick'>
+                        <p class='red-sum-2'>TL Broxah</p>
+                    </li>
+                    <li class='third-pick'>
+                        <p class='red-sum-3'>TL Jensen</p>
+                    </li>
+                    <li class='fourth-pick'>
+                        <p class='red-sum-4'>TL Tactical</p>
+                    </li>
+                    <li class='fifth-pick'>
+                        <p class='red-sum-5'>TL CoreJJ</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class='ban-titles clearfix'>
+            <div class='col blue-ban-title'>
+                <p>BANS</p>
+            </div>
+
+            <div class='col analysis'>
+                <p>ANALYSIS</p>
+            </div>
+
+            <div class='col red-ban-title'>
+                <p>BANS</p>
+            </div>
+
+        </div>
+
+        <div class='ban-info clearfix'>
+
+            <div class='col blue-bans'>
+                <p>PHASE 1</p>
+                <ul class='phase1-blue-bans'>
+                    <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                    <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                    <li><img src='img/tiles/Akali_0.jpg' alt='Akali'></li>
+                </ul>
+
+
+                <p class='blue-ban-text'>PHASE 2</p>
+                <ul class='phase2-blue-bans'>
+                    <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                    <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                </ul>
+            </div>
+
+            <div class='col analysis-stat'>
+
+                <div class='col champ-pic'>
+                    <img src='img/champions/Aatrox_0.jpg' alt='Aatrox'>
+                </div>
+
+                <div class='col teamfight-score'>
+                    <p>Teamfight</p>
+                    <p class='teamfight-stat'>25</p>
+                </div>
+
+                <div class='col pick-score'>
+                    <p>Pick</p>
+                    <p class='pick-stat'>25</p>
+                </div>
+
+                <div class='col hypercarry-score'>
+                    <p>Hyper</p>
+                    <p class='hypercarry-stat'>10</p>
+                </div>
+
+                <div class='col poke-score'>
+                    <p>Poke</p>
+                    <p class='poke-stat'>10</p>
+                </div>
+
+                <div class='col split-score'>
+                    <p>Split</p>
+                    <p class='split-stat'>30</p>
+                </div>
+
+            </div>
+
+            <div class='col red-bans'>
+                <p>PHASE 1</p>
+                <ul class='phase1-red-bans'>
+                    <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                    <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                    <li><img src='img/tiles/Akali_0.jpg' alt='Akali'></li>
+                </ul>
+
+
+                <p class='red-ban-text'>PHASE 2</p>
+                <ul class='phase2-red-bans'>
+                    <li><img src='img/tiles/Aatrox_0.jpg' alt='Aatrox'></li>
+                    <li><img src='img/tiles/Ahri_0.jpg' alt='Ahri'></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!--<script src='js/bundle.js'></script>-->
 </body>
 
 </html>
