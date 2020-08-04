@@ -1,5 +1,5 @@
 import { Champion } from './obj';
-const attrox = new Champion('Attrox', {
+const aatrox = new Champion('Attrox', {
     'Damage': ['Both', 'S'],
     'Toughness': ['Sustain', 'A'],
     'CC': ['Both', 'B'],
@@ -7,11 +7,11 @@ const attrox = new Champion('Attrox', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 25,
     'Hyper': 10,
     'Poke': 10,
-    'Split': 25
+    'Split': 30
 }, ['jug', 'ski']);
 
 const ahri = new Champion('Ahri', {
@@ -389,7 +389,7 @@ const elise = new Champion('Elise', {
     'Split': 15
 }, ['ski', 'bur']);
 
-const evelyn = new Champion('Evelyn', {
+const evelynn = new Champion('Evelynn', {
     'Damage': ['Burst', 'S'],
     'Toughness': ['Sustain', 'D'],
     'CC': ['Hard', 'C'],
@@ -1110,7 +1110,7 @@ const wukong = new Champion('Wukong', {
     'Split': 30
 }, ['div', 'van']);
 
-const morderkaiser = new Champion('Morderkaiser', {
+const mordekaiser = new Champion('Morderkaiser', {
     'Damage': ['Both', 'A'],
     'Toughness': ['Mitigate', 'A'],
     'CC': ['Both', 'B'],
@@ -2222,7 +2222,7 @@ const zyra = new Champion('Zyra', {
 
 
 export const champions = {
-    'attrox': attrox,
+    'aatrox': aatrox,
     'ahri': ahri,
     'akali': akali,
     'alistar': alistar,
@@ -2234,7 +2234,7 @@ export const champions = {
     'aurelionsol': aurelionSol,
     'azir': azir,
     'bard': bard,
-    'bliztcrank': blitzcrank,
+    'blitzcrank': blitzcrank,
     'brand': brand,
     'braum': braum,
     'caitlyn': caitlyn,
@@ -2248,7 +2248,7 @@ export const champions = {
     'drmundo': drMundo,
     'ekko': ekko,
     'elise': elise,
-    'evelyn': evelyn,
+    'evelynn': evelynn,
     'ezreal': ezreal,
     'fiddlesticks': fiddlesticks,
     'fiora': fiora,
@@ -2296,7 +2296,7 @@ export const champions = {
     'masteryi': masterYi,
     'missfortune': missFortune,
     'wukong': wukong,
-    'morderkaiser': morderkaiser,
+    'mordekaiser': mordekaiser,
     'morgana': morgana,
     'nami': nami,
     'nasus': nasus,

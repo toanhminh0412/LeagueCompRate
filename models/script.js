@@ -12,7 +12,7 @@ let blueTeam = new Array();
 let redTeam = new Array();
 
 // First 3 bans into the game
-const firstBanPhase = () => {
+const firstBanPhasePro = () => {
     let banCount = 0;
 
     // ban loops
@@ -49,24 +49,25 @@ const firstBanPhase = () => {
 }
 
 // first 3 picks into the game
-const firstPickPhase = () => {
+const firstPickPhasePro = () => {
     let pickCount = 0;
 
-    // pick loop
-    while (pickCount < 3) {
 
-        // blue team picks
-        let bluePick = prompt('Blue pick a champion');
+    // blue team picks
+    let bluePick = prompt('Blue pick a champion');
+    bluePick = bluePick.replace(/\s/g, '');
+
+    // if fail, redo
+    while (!(championsPickList.hasOwnProperty(bluePick.toLowerCase()))) {
+        bluePick = prompt('Please select a valid champion. Blue pick a champion.');
         bluePick = bluePick.replace(/\s/g, '');
+    }
 
-        // if fail, redo
-        while (!(championsPickList.hasOwnProperty(bluePick.toLowerCase()))) {
-            bluePick = prompt('Please select a valid champion. Blue pick a champion.');
-            bluePick = bluePick.replace(/\s/g, '');
-        }
+    // add the picked champion to blue team
+    blueTeam.push(championsPickList[bluePick.toLowerCase()]);
 
-        // add the picked champion to blue team
-        blueTeam.push(championsPickList[bluePick.toLowerCase()]);
+    // pick loop
+    while (pickCount < 2) {
 
         // red team picks
         let redPick = prompt('Red pick a champion');
@@ -81,13 +82,49 @@ const firstPickPhase = () => {
         // add the picked champion to red team
         redTeam.push(championsPickList[redPick.toLowerCase()]);
         pickCount++;
+
     }
+
+    pickCount = 0;
+
+    while (pickCount < 2) {
+
+        // blue team picks
+        let bluePick = prompt('Blue pick a champion');
+        bluePick = bluePick.replace(/\s/g, '');
+
+        // if fail, redo
+        while (!(championsPickList.hasOwnProperty(bluePick.toLowerCase()))) {
+            bluePick = prompt('Please select a valid champion. Blue pick a champion.');
+            bluePick = bluePick.replace(/\s/g, '');
+        }
+
+        // add the picked champion to blue team
+        blueTeam.push(championsPickList[bluePick.toLowerCase()]);
+        pickCount++;
+
+    }
+
+    // red team picks
+    let redPick = prompt('Red pick a champion');
+    redPick = redPick.replace(/\s/g, '');
+
+    // if fail, redo
+    while (!(championsPickList.hasOwnProperty(redPick.toLowerCase()))) {
+        redPick = prompt('Please select a valid champion. Red pick a champion.');
+        redPick = redPick.replace(/\s/g, '');
+    }
+
+    // add the picked champion to red team
+    redTeam.push(championsPickList[redPick.toLowerCase()]);
+    pickCount++;
+
     console.log(blueTeam);
     console.log(redTeam);
 }
 
 // Last 2 bans of the game
-const secondBanPhase = () => {
+const secondBanPhasePro = () => {
     let banCount = 0;
 
     // ban loop
@@ -124,8 +161,22 @@ const secondBanPhase = () => {
 }
 
 // Last 2 picks of the game
-const secondPickPhase = () => {
+const secondPickPhasePro = () => {
     let pickCount = 0;
+
+    // redteam pick 
+    let redPick = prompt('Red pick a champion');
+    redPick = redPick.replace(/\s/g, '');
+
+    // if fail, redo
+    while (!(championsPickList.hasOwnProperty(redPick.toLowerCase()))) {
+        redPick = prompt('Please select a valid champion. Red pick a champion.');
+        redPick = redPick.replace(/\s/g, '');
+    }
+
+    // add the picked champion into red team
+    redTeam.push(championsPickList[redPick.toLowerCase()]);
+
 
     // pick loop 
     while (pickCount < 2) {
@@ -142,26 +193,27 @@ const secondPickPhase = () => {
 
         // add the picked champion into blue team
         blueTeam.push(championsPickList[bluePick.toLowerCase()]);
-
-        // redteam pick 
-        let redPick = prompt('Red pick a champion');
-        redPick = redPick.replace(/\s/g, '');
-
-        // if fail, redo
-        while (!(championsPickList.hasOwnProperty(redPick.toLowerCase()))) {
-            redPick = prompt('Please select a valid champion. Red pick a champion.');
-            redPick = redPick.replace(/\s/g, '');
-        }
-
-        // add the picked champion into red team
-        redTeam.push(championsPickList[redPick.toLowerCase()]);
         pickCount++;
     }
+
+    // redteam pick 
+    redPick = prompt('Red pick a champion');
+    redPick = redPick.replace(/\s/g, '');
+
+    // if fail, redo
+    while (!(championsPickList.hasOwnProperty(redPick.toLowerCase()))) {
+        redPick = prompt('Please select a valid champion. Red pick a champion.');
+        redPick = redPick.replace(/\s/g, '');
+    }
+
+    // add the picked champion into red team
+    redTeam.push(championsPickList[redPick.toLowerCase()]);
+
     console.log(blueTeam);
     console.log(redTeam);
 }
 
-const calculateWinrate = (blueTeamComp, redTeamComp) => {
+const calculateWinratePro = (blueTeamComp, redTeamComp) => {
 
     // calculate blue team teamcomp scores
     blueTeamComp.teamcompScore();
@@ -200,6 +252,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red team second main teamcomp is split (blue soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'split') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is poke (blue hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'poke') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is hypercarry (red hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'hypercarry') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is pick (red soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'pick') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     // blue team first teamcomp is pick
@@ -226,6 +302,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
         // red first main teamcomp is hypercarry (red soft counters)
         if (redTeamComp.firstMainAttr[0] === 'hypercarry') {
             let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 2;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red team second main teamcomp is split (blue soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'teamfight') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is split (blue hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'split') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is poke (red hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'poke') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is hypercarry (red soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'hypercarry') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 3;
             redTeamWinRatio += winRatio;
         }
 
@@ -258,6 +358,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red second main teamcopm is pick (blue soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'pick') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is teamfight (blue hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'teamfight') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is split (red hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'split') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is poke (red soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'poke') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     // blue team first teamcomp is poke
@@ -284,6 +408,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
         // red first main teamcomp is split (red soft counters)
         if (redTeamComp.firstMainAttr[0] === 'split') {
             let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 2;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red team second main teamcomp is hypercarry (blue soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'hypercarry') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is pick (blue hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'pick') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is teamfight (red hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'teamfight') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is split (red soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'split') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 3;
             redTeamWinRatio += winRatio;
         }
 
@@ -316,6 +464,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red team second main teamcomp is poke (blue soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'poke') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is hypercarry (blue hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'hypercarry') {
+            let winRatio = (blueTeamComp.firstMainAttr[1] / redTeamComp.secondMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is pick (red hard counters)
+        if (redTeamComp.secondMainAttr[0] === 'pick') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red second main teamcomp is teamfight (red soft counters)
+        if (redTeamComp.secondMainAttr[0] === 'teamfight') {
+            let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.firstMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     // blue team second teamcomp is teamfight
@@ -342,6 +514,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
         // red second main teamcomp is pick (red soft counters)
         if (redTeamComp.secondMainAttr[0] === 'pick') {
             let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 4;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red team first main teamcomp is split (blue soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'split') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is poke (blue hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'poke') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is hypercarry (red hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'hypercarry') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is pick (red soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'pick') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 3;
             redTeamWinRatio += winRatio;
         }
 
@@ -374,6 +570,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red team first main teamcomp is teamfight (blue soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'teamfight') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is split (blue hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'split') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is poke (red hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'poke') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is hypercarry (red soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'hypercarry') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     // blue team second teamcomp is hypercarry
@@ -400,6 +620,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
         // red second main teamcomp is poke (red soft counters)
         if (redTeamComp.secondMainAttr[0] === 'poke') {
             let winRatio = (redTeamComp.secondMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 4;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red team first main teamcomp is pick (blue soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'pick') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is teamfight (blue hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'teamfight') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is split (red hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'split') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is poke (red soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'poke') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 3;
             redTeamWinRatio += winRatio;
         }
 
@@ -432,6 +676,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red team first main teamcomp is hypercarry (blue soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'hypercarry') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is pick (blue hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'pick') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is teamfight (red hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'teamfight') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is split (red soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'split') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     // blue team second teamcomp is split
@@ -461,6 +729,30 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
             redTeamWinRatio += winRatio;
         }
 
+        // red team first main teamcomp is poke (blue soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'poke') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 3;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is hypercarry (blue hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'hypercarry') {
+            let winRatio = (blueTeamComp.secondMainAttr[1] / redTeamComp.firstMainAttr[1]) / 1.5;
+            blueTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is pick (red hard counters)
+        if (redTeamComp.firstMainAttr[0] === 'pick') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 1.5;
+            redTeamWinRatio += winRatio;
+        }
+
+        // red first main teamcomp is teamfight (red soft counters)
+        if (redTeamComp.firstMainAttr[0] === 'teamfight') {
+            let winRatio = (redTeamComp.firstMainAttr[1] / blueTeamComp.secondMainAttr[1]) / 3;
+            redTeamWinRatio += winRatio;
+        }
+
     }
 
     console.log(blueTeamComp);
@@ -477,27 +769,27 @@ const calculateWinrate = (blueTeamComp, redTeamComp) => {
 
 }
 
-const gameStart = () => {
+const proGameStart = () => {
 
     // first 3 bans
-    firstBanPhase();
+    firstBanPhasePro();
 
     // first 3 picks
-    firstPickPhase();
+    firstPickPhasePro();
 
     // last 2 bans
-    secondBanPhase();
+    secondBanPhasePro();
 
     //last 2 picks
-    secondPickPhase();
+    secondPickPhasePro();
 
 
     const blueTeamComp = new TeamComp(blueTeam);
     const redTeamComp = new TeamComp(redTeam);
 
     // calculate winrate of both team
-    calculateWinrate(blueTeamComp, redTeamComp);
+    calculateWinratePro(blueTeamComp, redTeamComp);
 }
 
 // app runs
-gameStart();
+proGameStart();
