@@ -1,9 +1,10 @@
 export class Champion {
-    constructor(name, attr, teamcomp, tags) {
+    constructor(name, attr, teamcomp, tags, img) {
         this.name = name;
         this.attr = attr;
         this.teamcomp = teamcomp;
         this.tags = tags;
+        this.img = img;
     }
 }
 

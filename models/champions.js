@@ -1,5 +1,5 @@
 import { Champion } from './obj';
-const aatrox = new Champion('Attrox', {
+const aatrox = new Champion('Aatrox', {
     'Damage': ['Both', 'S'],
     'Toughness': ['Sustain', 'A'],
     'CC': ['Both', 'B'],
@@ -12,7 +12,7 @@ const aatrox = new Champion('Attrox', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 30
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Aatrox_0.jpg');
 
 const ahri = new Champion('Ahri', {
     'Damage': ['Burst', 'A'],
@@ -27,7 +27,7 @@ const ahri = new Champion('Ahri', {
     'Hyper': 15,
     'Poke': 20,
     'Split': 10
-}, ['bur', 'ass']);
+}, ['bur', 'ass'], 'Ahri_0.jpg');
 
 const akali = new Champion('Akali', {
     'Damage': ['Both', 'S'],
@@ -42,7 +42,7 @@ const akali = new Champion('Akali', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 35
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Akali_0.jpg');
 
 const alistar = new Champion('Alistar', {
     'Damage': ['Burst', 'C'],
@@ -57,7 +57,7 @@ const alistar = new Champion('Alistar', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 15
-}, ['van', 'war']);
+}, ['van', 'war'], 'Alistar_0.jpg');
 
 const amumu = new Champion('Amumu', {
     'Damage': ['Both', 'B'],
@@ -72,7 +72,7 @@ const amumu = new Champion('Amumu', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 15
-}, ['van', 'div']);
+}, ['van', 'div'], 'Amumu_0.jpg');
 
 const anivia = new Champion('Anivia', {
     'Damage': ['Both', 'S'],
@@ -87,7 +87,7 @@ const anivia = new Champion('Anivia', {
     'Hyper': 25,
     'Poke': 20,
     'Split': 20
-}, ['bat', 'art']);
+}, ['bat', 'art'], 'Anivia_0.jpg');
 
 const annie = new Champion('Annie', {
     'Damage': ['Burst', 'S'],
@@ -102,7 +102,7 @@ const annie = new Champion('Annie', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 20
-}, ['bur', 'ass']);
+}, ['bur', 'ass'], 'Annie_0.jpg');
 
 const aphelios = new Champion('Aphelios', {
     'Damage': ['Both', 'S'],
@@ -117,7 +117,7 @@ const aphelios = new Champion('Aphelios', {
     'Hyper': 25,
     'Poke': 20,
     'Split': 15
-}, ['mar', 'bur']);
+}, ['mar', 'bur'], 'Aphelios_0.jpg');
 
 const ashe = new Champion('Ashe', {
     'Damage': ['DPS', 'S'],
@@ -132,7 +132,7 @@ const ashe = new Champion('Ashe', {
     'Hyper': 20,
     'Poke': 15,
     'Split': 5
-}, ['mar', '']);
+}, ['mar', ''], 'Ashe_0.jpg');
 
 const aurelionSol = new Champion('Aurelion Sol', {
     'Damage': ['Both', 'S'],
@@ -147,7 +147,7 @@ const aurelionSol = new Champion('Aurelion Sol', {
     'Hyper': 15,
     'Poke': 15,
     'Split': 10
-}, ['bat', 'cat']);
+}, ['bat', 'cat'], 'AurelionSol_0.jpg');
 
 const azir = new Champion('Azir', {
     'Damage': ['DPS', 'S'],
@@ -162,7 +162,7 @@ const azir = new Champion('Azir', {
     'Hyper': 20,
     'Poke': 20,
     'Split': 10
-}, ['spec', '']);
+}, ['spec', ''], 'Azir_0.jpg');
 
 const bard = new Champion('Bard', {
     'Damage': ['Burst', 'B'],
@@ -177,7 +177,7 @@ const bard = new Champion('Bard', {
     'Hyper': 20,
     'Poke': 15,
     'Split': 10
-}, ['cat', 'war']);
+}, ['cat', 'war'], 'Bard_0.jpg');
 
 const blitzcrank = new Champion('Blitzcrank', {
     'Damage': ['Burst', 'C'],
@@ -192,7 +192,7 @@ const blitzcrank = new Champion('Blitzcrank', {
     'Hyper': 15,
     'Poke': 15,
     'Split': 20
-}, ['cat', 'war']);
+}, ['cat', 'war'], 'Blitzcrank_0.jpg');
 
 const brand = new Champion('Brand', {
     'Damage': ['Burst', 'S'],
@@ -207,7 +207,7 @@ const brand = new Champion('Brand', {
     'Hyper': 15,
     'Poke': 25,
     'Split': 15
-}, ['bur', 'art']);
+}, ['bur', 'art'], 'Brand_0,jpg');
 
 const braum = new Champion('Braum', {
     'Damage': ['Burst', 'D'],
@@ -222,7 +222,7 @@ const braum = new Champion('Braum', {
     'Hyper': 30,
     'Poke': 15,
     'Split': 15
-}, ['war', 'van']);
+}, ['war', 'van'], 'Braum_0.jpg');
 
 const caitlyn = new Champion('Caitlyn', {
     'Damage': ['Both', 'S'],
@@ -237,7 +237,7 @@ const caitlyn = new Champion('Caitlyn', {
     'Hyper': 20,
     'Poke': 25,
     'Split': 10
-}, ['cat', 'war']);
+}, ['cat', 'war'], 'Caitlyn_0.jpg');
 
 const camille = new Champion('Camille', {
     'Damage': ['Burst', 'S'],
@@ -252,7 +252,7 @@ const camille = new Champion('Camille', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 35
-}, ['div', 'cat']);
+}, ['div', 'cat'], 'Camille_0.jpg');
 
 const cassiopeia = new Champion('Cassiopeia', {
     'Damage': ['DPS', 'S'],
@@ -267,7 +267,7 @@ const cassiopeia = new Champion('Cassiopeia', {
     'Hyper': 25,
     'Poke': 20,
     'Split': 15
-}, ['bat', 'art']);
+}, ['bat', 'art'], 'Cassiopeia_0.jpg');
 
 const chogath = new Champion('Chogath', {
     'Damage': ['Burst', 'B'],
@@ -282,7 +282,7 @@ const chogath = new Champion('Chogath', {
     'Hyper': 15,
     'Poke': 20,
     'Split': 30
-}, ['spec', '']);
+}, ['spec', ''], 'Chogath_0.jpg');
 
 const corki = new Champion('Corki', {
     'Damage': ['DPS', 'S'],
@@ -297,7 +297,7 @@ const corki = new Champion('Corki', {
     'Hyper': 10,
     'Poke': 25,
     'Split': 10
-}, ['mar', 'bat']);
+}, ['mar', 'bat'], 'Corki_0.jpg');
 
 const darius = new Champion('Darius', {
     'Damage': ['DPS', 'A'],
@@ -312,7 +312,7 @@ const darius = new Champion('Darius', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 40
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Darius_0.jpg');
 
 const diana = new Champion('Diana', {
     'Damage': ['Burst', 'S'],
@@ -327,7 +327,7 @@ const diana = new Champion('Diana', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 30
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Diana_0.jpg');
 
 const draven = new Champion('Draven', {
     'Damage': ['DPS', 'S'],
@@ -342,7 +342,7 @@ const draven = new Champion('Draven', {
     'Hyper': 25,
     'Poke': 10,
     'Split': 20
-}, ['mar', 'ski']);
+}, ['mar', 'ski'], 'Draven_0.jpg');
 
 const drMundo = new Champion('Dr Mundo', {
     'Damage': ['DPS', 'B'],
@@ -357,7 +357,7 @@ const drMundo = new Champion('Dr Mundo', {
     'Hyper': 15,
     'Poke': 20,
     'Split': 30
-}, ['jug', 'van']);
+}, ['jug', 'van'], 'DrMundo_0.jpg');
 
 const ekko = new Champion('Ekko', {
     'Damage': ['Burst', 'S'],
@@ -372,7 +372,7 @@ const ekko = new Champion('Ekko', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 30
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Ekko_0.jpg');
 
 const elise = new Champion('Elise', {
     'Damage': ['Burst', 'S'],
@@ -387,7 +387,7 @@ const elise = new Champion('Elise', {
     'Hyper': 10,
     'Poke': 20,
     'Split': 15
-}, ['ski', 'bur']);
+}, ['ski', 'bur'], 'Elise_0.jpg');
 
 const evelynn = new Champion('Evelynn', {
     'Damage': ['Burst', 'S'],
@@ -402,7 +402,7 @@ const evelynn = new Champion('Evelynn', {
     'Hyper': 5,
     'Poke': 20,
     'Split': 15
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Evelynn_0.jpg');
 
 const ezreal = new Champion('Ezreal', {
     'Damage': ['DPS', 'S'],
@@ -417,7 +417,7 @@ const ezreal = new Champion('Ezreal', {
     'Hyper': 20,
     'Poke': 35,
     'Split': 10
-}, ['mar', 'art']);
+}, ['mar', 'art'], 'Ezreal_0.jpg');
 
 const fiddlesticks = new Champion('Fiddlesticks', {
     'Damage': ['Burst', 'S'],
@@ -432,7 +432,7 @@ const fiddlesticks = new Champion('Fiddlesticks', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 10
-}, ['spec', '']);
+}, ['spec', ''], 'FiddleSticks_0.jpg');
 
 const fiora = new Champion('Fiora', {
     'Damage': ['Both', 'S'],
@@ -447,7 +447,7 @@ const fiora = new Champion('Fiora', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 35
-}, ['ski', 'jug']);
+}, ['ski', 'jug'], 'Fiora_0.jpg');
 
 const fizz = new Champion('Fizz', {
     'Damage': ['Burst', 'S'],
@@ -462,7 +462,7 @@ const fizz = new Champion('Fizz', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 30
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Fizz_0.jpg');
 
 const galio = new Champion('Galio', {
     'Damage': ['Burst', 'B'],
@@ -477,7 +477,7 @@ const galio = new Champion('Galio', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 15
-}, ['war', 'van']);
+}, ['war', 'van'], 'Galio_0.jpg');
 
 const gangplank = new Champion('Gangplank', {
     'Damage': ['Burst', 'S'],
@@ -492,7 +492,7 @@ const gangplank = new Champion('Gangplank', {
     'Hyper': 10,
     'Poke': 20,
     'Split': 20
-}, ['spec', '']);
+}, ['spec', ''], 'Gangplank_0.jpg');
 
 const garen = new Champion('Garen', {
     'Damage': ['Both', 'B'],
@@ -507,7 +507,7 @@ const garen = new Champion('Garen', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 25
-}, ['jug', 'van']);
+}, ['jug', 'van'], 'Garen_0.jpg');
 
 const gnar = new Champion('Gnar', {
     'Damage': ['Both', 'A'],
@@ -522,7 +522,7 @@ const gnar = new Champion('Gnar', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 20
-}, ['war', 'van']);
+}, ['war', 'van'], 'Gnar_0.jpg');
 
 const gragas = new Champion('Gragas', {
     'Damage': ['Burst', 'A'],
@@ -537,7 +537,7 @@ const gragas = new Champion('Gragas', {
     'Hyper': 10,
     'Poke': 20,
     'Split': 10
-}, ['van', 'bur']);
+}, ['van', 'bur'], 'Gragas_0.jpg');
 
 const graves = new Champion('Graves', {
     'Damage': ['Both', 'A'],
@@ -552,7 +552,7 @@ const graves = new Champion('Graves', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 20
-}, ['spec', '']);
+}, ['spec', ''], 'Graves_0.jpg');
 
 const hecarim = new Champion('Hecarim', {
     'Damage': ['Both', 'A'],
@@ -567,7 +567,7 @@ const hecarim = new Champion('Hecarim', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 20
-}, ['div', 'van']);
+}, ['div', 'van'], 'Hecarim_0.jpg');
 
 const heimerdinger = new Champion('Heimerdinger', {
     'Damage': ['Both', 'S'],
@@ -582,7 +582,7 @@ const heimerdinger = new Champion('Heimerdinger', {
     'Hyper': 15,
     'Poke': 25,
     'Split': 23
-}, ['wpec', '']);
+}, ['wpec', ''], 'Heimerdinger_0.jpg');
 
 const illaoi = new Champion('Illaoi', {
     'Damage': ['Burst', 'S'],
@@ -597,7 +597,7 @@ const illaoi = new Champion('Illaoi', {
     'Hyper': 5,
     'Poke': 20,
     'Split': 40
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Illaoi_0.jpg');
 
 const irelia = new Champion('Irelia', {
     'Damage': ['Both', 'S'],
@@ -612,7 +612,7 @@ const irelia = new Champion('Irelia', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 35
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Irelia_0.jpg');
 
 const ivern = new Champion('Ivern', {
     'Damage': ['Burst', 'D'],
@@ -627,7 +627,7 @@ const ivern = new Champion('Ivern', {
     'Hyper': 35,
     'Poke': 20,
     'Split': 5
-}, ['cat', 'enc']);
+}, ['cat', 'enc'], 'Ivern_0.jpg');
 
 const janna = new Champion('Janna', {
     'Damage': ['Burst', 'B'],
@@ -642,9 +642,9 @@ const janna = new Champion('Janna', {
     'Hyper': 40,
     'Poke': 20,
     'Split': 10
-}, ['enc', 'art']);
+}, ['enc', 'art'], 'Janna_0.jpg');
 
-const jarvan = new Champion('Jarvan', {
+const jarvan = new Champion('Jarvan IV', {
     'Damage': ['Both', 'B'],
     'Toughness': ['Mitigate', 'A'],
     'CC': ['Both', 'A'],
@@ -657,7 +657,7 @@ const jarvan = new Champion('Jarvan', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 10
-}, ['div', 'van']);
+}, ['div', 'van'], 'JarvanIV_0.jpg');
 
 const jax = new Champion('Jax', {
     'Damage': ['Both', 'A'],
@@ -672,7 +672,7 @@ const jax = new Champion('Jax', {
     'Hyper': 20,
     'Poke': 5,
     'Split': 35
-}, ['ski', 'jug']);
+}, ['ski', 'jug'], 'Jax_0.jpg');
 
 const jayce = new Champion('Jayce', {
     'Damage': ['Burst', 'S'],
@@ -687,7 +687,7 @@ const jayce = new Champion('Jayce', {
     'Hyper': 5,
     'Poke': 30,
     'Split': 20
-}, ['art', 'bur']);
+}, ['art', 'bur'], 'Jayce_0.jpg');
 
 const jhin = new Champion('Jhin', {
     'Damage': ['Both', 'S'],
@@ -702,7 +702,7 @@ const jhin = new Champion('Jhin', {
     'Hyper': 20,
     'Poke': 20,
     'Split': 5
-}, ['mar', 'cat']);
+}, ['mar', 'cat'], 'Jhin_0.jpg');
 
 const jinx = new Champion('Jinx', {
     'Damage': ['DPS', 'S'],
@@ -717,7 +717,7 @@ const jinx = new Champion('Jinx', {
     'Hyper': 30,
     'Poke': 15,
     'Split': 5
-}, ['mar', '']);
+}, ['mar', ''], 'Jinx_0.jpg');
 
 const kaisa = new Champion('Kaisa', {
     'Damage': ['Both', 'S'],
@@ -732,7 +732,7 @@ const kaisa = new Champion('Kaisa', {
     'Hyper': 30,
     'Poke': 20,
     'Split': 5
-}, ['mar', 'div']);
+}, ['mar', 'div'], 'Kaisa_0.jpg');
 
 const kalista = new Champion('Kalista', {
     'Damage': ['DPS', 'S'],
@@ -747,7 +747,7 @@ const kalista = new Champion('Kalista', {
     'Hyper': 30,
     'Poke': 5,
     'Split': 5
-}, ['mar', 'ski']);
+}, ['mar', 'ski'], 'Kalista_0.jpg');
 
 const karma = new Champion('Karma', {
     'Damage': ['Burst', 'B'],
@@ -762,7 +762,7 @@ const karma = new Champion('Karma', {
     'Hyper': 25,
     'Poke': 25,
     'Split': 5
-}, ['enc', 'bur']);
+}, ['enc', 'bur'], 'Karma_0.jpg');
 
 const karthus = new Champion('Karthus', {
     'Damage': ['DPS', 'S'],
@@ -777,7 +777,7 @@ const karthus = new Champion('Karthus', {
     'Hyper': 20,
     'Poke': 25,
     'Split': 5
-}, ['bat', 'cat']);
+}, ['bat', 'cat'], 'Karthus_0.jpg');
 
 const kassadin = new Champion('Kassadin', {
     'Damage': ['Burst', 'S'],
@@ -792,7 +792,7 @@ const kassadin = new Champion('Kassadin', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 25
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Kassadin_0.jpg');
 
 const katarina = new Champion('Katarina', {
     'Damage': ['Burst', 'S'],
@@ -807,7 +807,7 @@ const katarina = new Champion('Katarina', {
     'Hyper': 20,
     'Poke': 5,
     'Split': 10
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Katarina_0.jpg');
 
 const kayle = new Champion('Kayle', {
     'Damage': ['DPS', 'S'],
@@ -822,7 +822,7 @@ const kayle = new Champion('Kayle', {
     'Hyper': 30,
     'Poke': 10,
     'Split': 20
-}, ['spec', '']);
+}, ['spec', ''], 'Kayle_0.jpg');
 
 const kayn = new Champion('Kayn', {
     'Damage': ['Burst', 'A'],
@@ -837,7 +837,7 @@ const kayn = new Champion('Kayn', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 10
-}, ['ski', 'ass']);
+}, ['ski', 'ass'], 'Kayn_0.jpg');
 
 const kennen = new Champion('Kennen', {
     'Damage': ['Burst', 'S'],
@@ -852,7 +852,7 @@ const kennen = new Champion('Kennen', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 15
-}, ['spec', '']);
+}, ['spec', ''], 'Kennen_0.jpg');
 
 const khazix = new Champion("Kha'zix", {
     'Damage': ['Burst', 'S'],
@@ -867,7 +867,7 @@ const khazix = new Champion("Kha'zix", {
     'Hyper': 10,
     'Poke': 15,
     'Split': 15
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Khazix_0.jpg');
 
 const kindred = new Champion('Kindred', {
     'Damage': ['DPS', 'S'],
@@ -882,7 +882,7 @@ const kindred = new Champion('Kindred', {
     'Hyper': 20,
     'Poke': 15,
     'Split': 15
-}, ['mar', '']);
+}, ['mar', ''], 'Kindred_0.jpg');
 
 const kled = new Champion('Kled', {
     'Damage': ['Both', 'A'],
@@ -897,7 +897,7 @@ const kled = new Champion('Kled', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 30
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Kled_0.jpg');
 
 const kogmaw = new Champion("Kog'Maw", {
     'Damage': ['DPS', 'S'],
@@ -912,7 +912,7 @@ const kogmaw = new Champion("Kog'Maw", {
     'Hyper': 40,
     'Poke': 20,
     'Split': 5
-}, ['mar', 'art']);
+}, ['mar', 'art'], 'KogMaw_0.jpg');
 
 
 const leblanc = new Champion('Leblanc', {
@@ -928,7 +928,7 @@ const leblanc = new Champion('Leblanc', {
     'Hyper': 10,
     'Poke': 25,
     'Split': 5
-}, ['bur', 'ass']);
+}, ['bur', 'ass'], 'Leblanc_0.jpg');
 
 const leesin = new Champion('Leesin', {
     'Damage': ['Both', 'A'],
@@ -943,7 +943,7 @@ const leesin = new Champion('Leesin', {
     'Hyper': 15,
     'Poke': 10,
     'Split': 15
-}, ['div', 'bur']);
+}, ['div', 'bur'], 'LeeSin_0.jpg');
 
 const leona = new Champion('Leona', {
     'Damage': ['Burst', 'C'],
@@ -958,7 +958,7 @@ const leona = new Champion('Leona', {
     'Hyper': 25,
     'Poke': 10,
     'Split': 10
-}, ['van', 'war']);
+}, ['van', 'war'], 'Leona_0.jpg');
 
 const lissandra = new Champion('Lissandra', {
     'Damage': ['Burst', 'A'],
@@ -973,7 +973,7 @@ const lissandra = new Champion('Lissandra', {
     'Hyper': 15,
     'Poke': 15,
     'Split': 5
-}, ['bur', 'div']);
+}, ['bur', 'div'], 'Lissandra_0.jpg');
 
 const lucian = new Champion('Lucian', {
     'Damage': ['Both', 'S'],
@@ -988,7 +988,7 @@ const lucian = new Champion('Lucian', {
     'Hyper': 20,
     'Poke': 15,
     'Split': 10
-}, ['mar', 'bur']);
+}, ['mar', 'bur'], 'Lucian_0.jpg');
 
 const lulu = new Champion('Lulu', {
     'Damage': ['Burst', 'B'],
@@ -1003,7 +1003,7 @@ const lulu = new Champion('Lulu', {
     'Hyper': 40,
     'Poke': 20,
     'Split': 5
-}, ['enc', '']);
+}, ['enc', ''], 'Lulu_0.jpg');
 
 const lux = new Champion('Lux', {
     'Damage': ['Burst', 'S'],
@@ -1018,7 +1018,7 @@ const lux = new Champion('Lux', {
     'Hyper': 10,
     'Poke': 30,
     'Split': 10
-}, ['art', 'bur']);
+}, ['art', 'bur'], 'Lux_0.jpg');
 
 const malphite = new Champion('Malphite', {
     'Damage': ['Burst', 'B'],
@@ -1033,7 +1033,7 @@ const malphite = new Champion('Malphite', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 25
-}, ['van', 'div']);
+}, ['van', 'div'], 'Malphite_0.jpg');
 
 const malzahar = new Champion('Malzahar', {
     'Damage': ['Both', 'S'],
@@ -1048,7 +1048,7 @@ const malzahar = new Champion('Malzahar', {
     'Hyper': 10,
     'Poke': 25,
     'Split': 10
-}, ['bat', 'ski']);
+}, ['bat', 'ski'], 'Malzahar_0.jpg');
 
 const maokai = new Champion('Maokai', {
     'Damage': ['Burst', 'C'],
@@ -1063,7 +1063,7 @@ const maokai = new Champion('Maokai', {
     'Hyper': 15,
     'Poke': 10,
     'Split': 20
-}, ['van', 'div']);
+}, ['van', 'div'], 'Maokai_0.jpg');
 
 const masterYi = new Champion('Master Yi', {
     'Damage': ['DPS', 'S'],
@@ -1078,7 +1078,7 @@ const masterYi = new Champion('Master Yi', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 35
-}, ['ski', 'jug']);
+}, ['ski', 'jug'], 'MasterYi_0.jpg');
 
 const missFortune = new Champion('Miss Fortune', {
     'Damage': ['Both', 'S'],
@@ -1093,7 +1093,7 @@ const missFortune = new Champion('Miss Fortune', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 10
-}, ['mar', '']);
+}, ['mar', ''], 'MissFortune_0.jpg');
 
 const wukong = new Champion('Wukong', {
     'Damage': ['Burst', 'A'],
@@ -1108,9 +1108,9 @@ const wukong = new Champion('Wukong', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 30
-}, ['div', 'van']);
+}, ['div', 'van'], 'MonkeyKing_0.jpg');
 
-const mordekaiser = new Champion('Morderkaiser', {
+const mordekaiser = new Champion('Mordekaiser', {
     'Damage': ['Both', 'A'],
     'Toughness': ['Mitigate', 'A'],
     'CC': ['Both', 'B'],
@@ -1123,7 +1123,7 @@ const mordekaiser = new Champion('Morderkaiser', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 35
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Mordekaiser_0.jpg');
 
 const morgana = new Champion('Morgana', {
     'Damage': ['Burst', 'B'],
@@ -1138,7 +1138,7 @@ const morgana = new Champion('Morgana', {
     'Hyper': 20,
     'Poke': 20,
     'Split': 15
-}, ['cat', 'enc']);
+}, ['cat', 'enc'], 'Morgana_0.jpg');
 
 const nami = new Champion('Nami', {
     'Damage': ['Burst', 'B'],
@@ -1153,7 +1153,7 @@ const nami = new Champion('Nami', {
     'Hyper': 35,
     'Poke': 15,
     'Split': 5
-}, ['enc', 'cat']);
+}, ['enc', 'cat'], 'Nami_0.jpg');
 
 const nasus = new Champion('Nasus', {
     'Damage': ['DPS', 'A'],
@@ -1168,7 +1168,7 @@ const nasus = new Champion('Nasus', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 40
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Nasus_0.jpg');
 
 const nautilus = new Champion('Nautilus', {
     'Damage': ['Burst', 'B'],
@@ -1183,7 +1183,7 @@ const nautilus = new Champion('Nautilus', {
     'Hyper': 20,
     'Poke': 5,
     'Split': 10
-}, ['van', '']);
+}, ['van', ''], 'Nautilus_0.jpg');
 
 const neeko = new Champion('Neeko', {
     'Damage': ['Burst', 'S'],
@@ -1198,7 +1198,7 @@ const neeko = new Champion('Neeko', {
     'Hyper': 5,
     'Poke': 25,
     'Split': 15
-}, ['bur', 'cat']);
+}, ['bur', 'cat'], 'Neeko_0.jpg');
 
 const nidalee = new Champion('Nidalee', {
     'Damage': ['Burst', 'S'],
@@ -1213,7 +1213,7 @@ const nidalee = new Champion('Nidalee', {
     'Hyper': 10,
     'Poke': 30,
     'Split': 10
-}, ['spec', '']);
+}, ['spec', ''], 'Nidalee_0.jpg');
 
 const nocturne = new Champion('Nocturne', {
     'Damage': ['DPS', 'A'],
@@ -1228,7 +1228,7 @@ const nocturne = new Champion('Nocturne', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 25
-}, ['ass', 'ski']);
+}, ['ass', 'ski'], 'Nocturne_0.jpg');
 
 const nunu = new Champion('Nunu', {
     'Damage': ['Burst', 'C'],
@@ -1243,7 +1243,7 @@ const nunu = new Champion('Nunu', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 15
-}, ['van', 'cat']);
+}, ['van', 'cat'], 'Nunu_0.jpg');
 
 const olaf = new Champion('Olaf', {
     'Damage': ['DPS', 'A'],
@@ -1258,7 +1258,7 @@ const olaf = new Champion('Olaf', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 30
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Olaf_0.jpg');
 
 const orianna = new Champion('Orianna', {
     'Damage': ['Burst', 'S'],
@@ -1273,7 +1273,7 @@ const orianna = new Champion('Orianna', {
     'Hyper': 15,
     'Poke': 25,
     'Split': 5
-}, ['bur', 'art']);
+}, ['bur', 'art'], 'Orianna_0.jpg');
 
 const ornn = new Champion('Ornn', {
     'Damage': ['Burst', 'C'],
@@ -1288,7 +1288,7 @@ const ornn = new Champion('Ornn', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 20
-}, ['van', 'cat']);
+}, ['van', 'cat'], 'Ornn_0.jpg');
 
 const pantheon = new Champion('Pantheon', {
     'Damage': ['Burst', 'S'],
@@ -1303,7 +1303,7 @@ const pantheon = new Champion('Pantheon', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 30
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Pantheon_0.jpg');
 
 const poppy = new Champion('Poppy', {
     'Damage': ['Burst', 'C'],
@@ -1318,7 +1318,7 @@ const poppy = new Champion('Poppy', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 25
-}, ['war', 'van']);
+}, ['war', 'van'], 'Poppy_0.jpg');
 
 const pyke = new Champion('Pyke', {
     'Damage': ['Burst', 'A'],
@@ -1333,7 +1333,7 @@ const pyke = new Champion('Pyke', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 15
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Pyke_0.jpg');
 
 const qiyana = new Champion('Qiyana', {
     'Damage': ['Burst', 'S'],
@@ -1348,7 +1348,7 @@ const qiyana = new Champion('Qiyana', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 15
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Qiyana_0.jpg');
 
 const quinn = new Champion('Quinn', {
     'Damage': ['Both', 'S'],
@@ -1363,7 +1363,7 @@ const quinn = new Champion('Quinn', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 20
-}, ['spec', '']);
+}, ['spec', ''], 'Quinn_0.jpg');
 
 const rakan = new Champion('Rakan', {
     'Damage': ['Burst', 'C'],
@@ -1378,7 +1378,7 @@ const rakan = new Champion('Rakan', {
     'Hyper': 25,
     'Poke': 5,
     'Split': 5
-}, ['cat', 'war']);
+}, ['cat', 'war'], 'Rakan_0.jpg');
 
 const rammus = new Champion('Rammus', {
     'Damage': ['Both', 'C'],
@@ -1393,7 +1393,7 @@ const rammus = new Champion('Rammus', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 15
-}, ['van', 'div']);
+}, ['van', 'div'], 'Rammus_0.jpg');
 
 const reksai = new Champion("Rek'Sai", {
     'Damage': ['Burst', 'A'],
@@ -1408,7 +1408,7 @@ const reksai = new Champion("Rek'Sai", {
     'Hyper': 5,
     'Poke': 10,
     'Split': 20
-}, ['div', 'ski']);
+}, ['div', 'ski'], 'RekSai_0.jpg');
 
 const renekton = new Champion('Renekton', {
     'Damage': ['Both', 'S'],
@@ -1423,7 +1423,7 @@ const renekton = new Champion('Renekton', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 35
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Renekton_0.jpg');
 
 const rengar = new Champion('Rengar', {
     'Damage': ['Burst', 'S'],
@@ -1438,7 +1438,7 @@ const rengar = new Champion('Rengar', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 30
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Rengar_0.jpg');
 
 const riven = new Champion('Riven', {
     'Damage': ['Both', 'S'],
@@ -1453,7 +1453,7 @@ const riven = new Champion('Riven', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 30
-}, ['ski', 'div']);
+}, ['ski', 'div'], 'Riven_0.jpg');
 
 const rumble = new Champion('Rumble', {
     'Damage': ['Both', 'A'],
@@ -1468,7 +1468,7 @@ const rumble = new Champion('Rumble', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 25
-}, ['bat', 'cat']);
+}, ['bat', 'cat'], 'Rumble_0.jpg');
 
 const ryze = new Champion('Ryze', {
     'Damage': ['Both', 'S'],
@@ -1483,7 +1483,7 @@ const ryze = new Champion('Ryze', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 25
-}, ['bat', '']);
+}, ['bat', ''], 'Ryze_0.jpg');
 
 const sejuani = new Champion('Sejuani', {
     'Damage': ['Burst', 'C'],
@@ -1498,7 +1498,7 @@ const sejuani = new Champion('Sejuani', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 10
-}, ['van', '']);
+}, ['van', ''], 'Sejuani_0.jpg');
 
 const senna = new Champion('Senna', {
     'Damage': ['DPS', 'A'],
@@ -1513,7 +1513,7 @@ const senna = new Champion('Senna', {
     'Hyper': 25,
     'Poke': 20,
     'Split': 5
-}, ['mar', 'enc']);
+}, ['mar', 'enc'], 'Senna_0.jpg');
 
 const sett = new Champion('Sett', {
     'Damage': ['Both', 'A'],
@@ -1528,7 +1528,7 @@ const sett = new Champion('Sett', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 35
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Sett_0.jpg');
 
 const shaco = new Champion('Shaco', {
     'Damage': ['Burst', 'S'],
@@ -1543,7 +1543,7 @@ const shaco = new Champion('Shaco', {
     'Hyper': 10,
     'Poke': 20,
     'Split': 10
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Shaco_0.jpg');
 
 const shen = new Champion('Shen', {
     'Damage': ['DPS', 'B'],
@@ -1558,7 +1558,7 @@ const shen = new Champion('Shen', {
     'Hyper': 20,
     'Poke': 5,
     'Split': 20
-}, ['war', 'van']);
+}, ['war', 'van'], 'Shen_0.jpg');
 
 const shyvana = new Champion('Shyvana', {
     'Damage': ['Both', 'A'],
@@ -1573,7 +1573,7 @@ const shyvana = new Champion('Shyvana', {
     'Hyper': 5,
     'Poke': 25,
     'Split': 20
-}, ['jug', 'div']);
+}, ['jug', 'div'], 'Shyvana_0.jpg');
 
 const singed = new Champion('Singed', {
     'Damage': ['DPS', 'B'],
@@ -1588,7 +1588,7 @@ const singed = new Champion('Singed', {
     'Hyper': 5,
     'Poke': 5,
     'Split': 35
-}, ['spec', 'ski']);
+}, ['spec', 'ski'], 'Singed_0.jpg');
 
 const sion = new Champion('Sion', {
     'Damage': ['Burst', 'C'],
@@ -1603,7 +1603,7 @@ const sion = new Champion('Sion', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 25
-}, ['van', 'jug']);
+}, ['van', 'jug'], 'Sion_0.jpg');
 
 const sivir = new Champion('Sivir', {
     'Damage': ['DPS', 'S'],
@@ -1618,7 +1618,7 @@ const sivir = new Champion('Sivir', {
     'Hyper': 25,
     'Poke': 15,
     'Split': 10
-}, ['mar', 'enc']);
+}, ['mar', 'enc'], 'Sivir_0.jpg');
 
 const skarner = new Champion('Skaner', {
     'Damage': ['Burst', 'C'],
@@ -1633,7 +1633,7 @@ const skarner = new Champion('Skaner', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 20
-}, ['div', 'van']);
+}, ['div', 'van'], 'Skarner_0.jpg');
 
 const sona = new Champion('Sona', {
     'Damage': ['Burst', 'A'],
@@ -1648,7 +1648,7 @@ const sona = new Champion('Sona', {
     'Hyper': 30,
     'Poke': 25,
     'Split': 5
-}, ['enc', 'bur']);
+}, ['enc', 'bur'], 'Sona_0.jpg');
 
 const soraka = new Champion('Soraka', {
     'Damage': ['Burst', 'C'],
@@ -1663,7 +1663,7 @@ const soraka = new Champion('Soraka', {
     'Hyper': 35,
     'Poke': 15,
     'Split': 10
-}, ['enc', '']);
+}, ['enc', ''], 'Soraka_0.jpg');
 
 const swain = new Champion('Swain', {
     'Damage': ['Both', 'S'],
@@ -1678,7 +1678,7 @@ const swain = new Champion('Swain', {
     'Hyper': 5,
     'Poke': 20,
     'Split': 25
-}, ['bat', 'div']);
+}, ['bat', 'div'], 'Swain_0.jpg');
 
 const sylas = new Champion('Sylas', {
     'Damage': ['Burst', 'S'],
@@ -1693,7 +1693,7 @@ const sylas = new Champion('Sylas', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 25
-}, ['bur', 'ski']);
+}, ['bur', 'ski'], 'Sylas_0.jpg');
 
 const syndra = new Champion('Syndra', {
     'Damage': ['Burst', 'S'],
@@ -1708,7 +1708,7 @@ const syndra = new Champion('Syndra', {
     'Hyper': 5,
     'Poke': 35,
     'Split': 10
-}, ['bur', 'art']);
+}, ['bur', 'art'], 'Syndra_0.jpg');
 
 const tahmKench = new Champion('Tahm Kench', {
     'Damage': ['DPS', 'C'],
@@ -1723,7 +1723,7 @@ const tahmKench = new Champion('Tahm Kench', {
     'Hyper': 30,
     'Poke': 5,
     'Split': 20
-}, ['war', 'jug']);
+}, ['war', 'jug'], 'TahmKench_0.jpg');
 
 const taliyah = new Champion('Taliyah', {
     'Damage': ['Both', 'S'],
@@ -1738,7 +1738,7 @@ const taliyah = new Champion('Taliyah', {
     'Hyper': 5,
     'Poke': 30,
     'Split': 10
-}, ['bat', 'cat']);
+}, ['bat', 'cat'], 'Taliyah_0.jpg');
 
 const talon = new Champion('Talon', {
     'Damage': ['Burst', 'S'],
@@ -1753,7 +1753,7 @@ const talon = new Champion('Talon', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 25
-}, ['ass', 'div']);
+}, ['ass', 'div'], 'Talon_0.jpg');
 
 const taric = new Champion('Taric', {
     'Damage': ['DPS', 'D'],
@@ -1768,7 +1768,7 @@ const taric = new Champion('Taric', {
     'Hyper': 40,
     'Poke': 10,
     'Split': 15
-}, ['enc', 'war']);
+}, ['enc', 'war'], 'Taric_0.jpg');
 
 const teemo = new Champion('Teemo', {
     'Damage': ['DPS', 'S'],
@@ -1783,7 +1783,7 @@ const teemo = new Champion('Teemo', {
     'Hyper': 10,
     'Poke': 15,
     'Split': 30
-}, ['spec', '']);
+}, ['spec', ''], 'Teemo_0.jpg');
 
 const thresh = new Champion('Thresh', {
     'Damage': ['Burst', 'C'],
@@ -1798,7 +1798,7 @@ const thresh = new Champion('Thresh', {
     'Hyper': 30,
     'Poke': 20,
     'Split': 10
-}, ['cat', 'war']);
+}, ['cat', 'war'], 'Thresh_0.jpg');
 
 const tristana = new Champion('Tristana', {
     'Damage': ['DPS', 'S'],
@@ -1813,7 +1813,7 @@ const tristana = new Champion('Tristana', {
     'Hyper': 25,
     'Poke': 15,
     'Split': 10
-}, ['mar', '']);
+}, ['mar', ''], 'Tristana_0.jpg');
 
 const trundle = new Champion('Trundle', {
     'Damage': ['DPS', 'C'],
@@ -1828,7 +1828,7 @@ const trundle = new Champion('Trundle', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 25
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Trundle_0.jpg');
 
 const tryndamere = new Champion('Tryndamere', {
     'Damage': ['DPS', 'S'],
@@ -1843,7 +1843,7 @@ const tryndamere = new Champion('Tryndamere', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 40
-}, ['ski', 'jug']);
+}, ['ski', 'jug'], 'Tryndamere_0.jpg');
 
 const twistedFate = new Champion('Twisted Fate', {
     'Damage': ['Burst', 'A'],
@@ -1858,7 +1858,7 @@ const twistedFate = new Champion('Twisted Fate', {
     'Hyper': 5,
     'Poke': 20,
     'Split': 15
-}, ['bur', 'bat']);
+}, ['bur', 'bat'], 'TwistedFate_0.jpg');
 
 const twitch = new Champion('Twitch', {
     'Damage': ['DPS', 'S'],
@@ -1873,7 +1873,7 @@ const twitch = new Champion('Twitch', {
     'Hyper': 35,
     'Poke': 5,
     'Split': 5
-}, ['mar', '']);
+}, ['mar', ''], 'Twitch_0.jpg');
 
 const udyr = new Champion('Udyr', {
     'Damage': ['DPS', 'A'],
@@ -1888,7 +1888,7 @@ const udyr = new Champion('Udyr', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 40
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Udyr_0.jpg');
 
 const urgot = new Champion('Urgot', {
     'Damage': ['DPS', 'A'],
@@ -1903,7 +1903,7 @@ const urgot = new Champion('Urgot', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 35
-}, ['jug', 'ski']);
+}, ['jug', 'ski'], 'Urgot_0.jpg');
 
 const varus = new Champion('Varus', {
     'Damage': ['Both', 'S'],
@@ -1918,7 +1918,7 @@ const varus = new Champion('Varus', {
     'Hyper': 30,
     'Poke': 20,
     'Split': 5
-}, ['mar', 'art']);
+}, ['mar', 'art'], 'Varus_0.jpg');
 
 const vayne = new Champion('Vayne', {
     'Damage': ['DPS', 'S'],
@@ -1933,7 +1933,7 @@ const vayne = new Champion('Vayne', {
     'Hyper': 35,
     'Poke': 5,
     'Split': 5
-}, ['mar', '']);
+}, ['mar', ''], 'Vayne_0.jpg');
 
 const veigar = new Champion('Veigar', {
     'Damage': ['Burst', 'S'],
@@ -1948,7 +1948,7 @@ const veigar = new Champion('Veigar', {
     'Hyper': 20,
     'Poke': 20,
     'Split': 10
-}, ['bur', 'art']);
+}, ['bur', 'art'], 'Veigar_0.jpg');
 
 const velkoz = new Champion('Velkoz', {
     'Damage': ['Burst', 'S'],
@@ -1963,7 +1963,7 @@ const velkoz = new Champion('Velkoz', {
     'Hyper': 10,
     'Poke': 35,
     'Split': 10
-}, ['art', 'bur']);
+}, ['art', 'bur'], 'Velkoz_0.jpg');
 
 const vi = new Champion('Vi', {
     'Damage': ['Burst', 'A'],
@@ -1978,7 +1978,7 @@ const vi = new Champion('Vi', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 25
-}, ['div', 'bur']);
+}, ['div', 'bur'], 'Vi_0.jpg');
 
 const viktor = new Champion('Viktor', {
     'Damage': ['Both', 'S'],
@@ -1993,7 +1993,7 @@ const viktor = new Champion('Viktor', {
     'Hyper': 20,
     'Poke': 25,
     'Split': 10
-}, ['bat', 'bur']);
+}, ['bat', 'bur'], 'Viktor_0.jpg');
 
 const vladimir = new Champion('Vladimir', {
     'Damage': ['Burst', 'S'],
@@ -2008,7 +2008,7 @@ const vladimir = new Champion('Vladimir', {
     'Hyper': 5,
     'Poke': 10,
     'Split': 30
-}, ['bat', 'bur']);
+}, ['bat', 'bur'], 'Vladimir_0.jpg');
 
 const volibear = new Champion('Volibear', {
     'Damage': ['Both', 'A'],
@@ -2023,7 +2023,7 @@ const volibear = new Champion('Volibear', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 25
-}, ['jug', 'van']);
+}, ['jug', 'van'], 'Volibear_0.jpg');
 
 const warwick = new Champion('Warwick', {
     'Damage': ['DPS', 'A'],
@@ -2038,7 +2038,7 @@ const warwick = new Champion('Warwick', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 30
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'Warwick_0.jpg');
 
 const xayah = new Champion('Xayah', {
     'Damage': ['DPS', 'S'],
@@ -2053,7 +2053,7 @@ const xayah = new Champion('Xayah', {
     'Hyper': 25,
     'Poke': 10,
     'Split': 10
-}, ['mar', '']);
+}, ['mar', ''], 'Xayah_0.jpg');
 
 const xerath = new Champion('Xerath', {
     'Damage': ['Burst', 'S'],
@@ -2068,7 +2068,7 @@ const xerath = new Champion('Xerath', {
     'Hyper': 5,
     'Poke': 35,
     'Split': 10
-}, ['art', 'bur']);
+}, ['art', 'bur'], 'Xerath_0.jpg');
 
 const xinZhao = new Champion('Xin Zhao', {
     'Damage': ['DPS', 'A'],
@@ -2083,7 +2083,7 @@ const xinZhao = new Champion('Xin Zhao', {
     'Hyper': 10,
     'Poke': 5,
     'Split': 30
-}, ['div', 'jug']);
+}, ['div', 'jug'], 'XinZhao_0.jpg');
 
 const yasuo = new Champion('Yasuo', {
     'Damage': ['DPS', 'S'],
@@ -2098,7 +2098,7 @@ const yasuo = new Champion('Yasuo', {
     'Hyper': 20,
     'Poke': 10,
     'Split': 30
-}, ['ski', 'ass']);
+}, ['ski', 'ass'], 'Yasuo_0.jpg');
 
 const yorick = new Champion('Yorick', {
     'Damage': ['DPS', 'A'],
@@ -2113,7 +2113,7 @@ const yorick = new Champion('Yorick', {
     'Hyper': 10,
     'Poke': 10,
     'Split': 40
-}, ['jug', '']);
+}, ['jug', ''], 'Yorick_0.jpg');
 
 const yuumi = new Champion('Yuumi', {
     'Damage': ['Burst', 'B'],
@@ -2128,7 +2128,7 @@ const yuumi = new Champion('Yuumi', {
     'Hyper': 40,
     'Poke': 15,
     'Split': 5
-}, ['enc', '']);
+}, ['enc', ''], 'Yuumi_0.jpg');
 
 const zac = new Champion('Zac', {
     'Damage': ['Burst', 'C'],
@@ -2143,7 +2143,7 @@ const zac = new Champion('Zac', {
     'Hyper': 15,
     'Poke': 5,
     'Split': 10
-}, ['van', 'div']);
+}, ['van', 'div'], 'Zac_0.jpg');
 
 const zed = new Champion('Zed', {
     'Damage': ['Burst', 'S'],
@@ -2158,7 +2158,7 @@ const zed = new Champion('Zed', {
     'Hyper': 5,
     'Poke': 15,
     'Split': 25
-}, ['ass', 'bur']);
+}, ['ass', 'bur'], 'Zed_0.jpg');
 
 const ziggs = new Champion('Ziggs', {
     'Damage': ['Burst', 'S'],
@@ -2173,7 +2173,7 @@ const ziggs = new Champion('Ziggs', {
     'Hyper': 5,
     'Poke': 30,
     'Split': 10
-}, ['art', 'cat']);
+}, ['art', 'cat'], 'Ziggs_0.jpg');
 
 const zilean = new Champion('Zilean', {
     'Damage': ['Burst', 'B'],
@@ -2188,7 +2188,7 @@ const zilean = new Champion('Zilean', {
     'Hyper': 30,
     'Poke': 20,
     'Split': 10
-}, ['spec', '']);
+}, ['spec', ''], 'Zilean_0.jpg');
 
 const zoe = new Champion('Zoe', {
     'Damage': ['Burst', 'S'],
@@ -2203,7 +2203,7 @@ const zoe = new Champion('Zoe', {
     'Hyper': 10,
     'Poke': 35,
     'Split': 10
-}, ['bur', 'art']);
+}, ['bur', 'art'], 'Zoe_0.jpg');
 
 const zyra = new Champion('Zyra', {
     'Damage': ['Both', 'S'],
@@ -2218,7 +2218,7 @@ const zyra = new Champion('Zyra', {
     'Hyper': 15,
     'Poke': 30,
     'Split': 10
-}, ['cat', 'bat']);
+}, ['cat', 'bat'], 'Zyra_0.jpg');
 
 
 export const champions = {
