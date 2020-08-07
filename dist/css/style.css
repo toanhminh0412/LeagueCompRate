@@ -69,6 +69,14 @@ body {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
 
 /*-----------------*/
 
@@ -282,63 +290,133 @@ body {
 }
 
 .blue-team-picks .first-pick {
-    background-image: url(../img/champions/Aatrox_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.blue-team-picks .first-pick:hover,
+.blue-team-picks .first-pick:active {
+    border: 2px solid #5DADE2;
 }
 
 .red-team-picks .first-pick {
-    background-image: url(../img/champions/Ahri_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.red-team-picks .first-pick:hover,
+.red-team-picks .first-pick:active {
+    border: 2px solid #FF0000;
 }
 
 .blue-team-picks .second-pick {
-    background-image: url(../img/champions/Akali_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.blue-team-picks .second-pick:hover,
+.blue-team-picks .second-pick:active {
+    border: 2px solid #5DADE2;
 }
 
 .red-team-picks .second-pick {
-    background-image: url(../img/champions/AurelionSol_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.red-team-picks .second-pick:hover,
+.red-team-picks .second-pick:active {
+    border: 2px solid #FF0000;
 }
 
 .blue-team-picks .third-pick {
-    background-image: url(../img/champions/Azir_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.blue-team-picks .third-pick:hover,
+.blue-team-picks .third-pick:active {
+    border: 2px solid #5DADE2;
 }
 
 .red-team-picks .third-pick {
-    background-image: url(../img/champions/Darius_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.red-team-picks .third-pick:hover,
+.red-team-picks .third-pick:active {
+    border: 2px solid #FF0000;
 }
 
 .blue-team-picks .fourth-pick {
-    background-image: url(../img/champions/Fiddlesticks_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.blue-team-picks .fourth-pick:hover,
+.blue-team-picks .fourth-pick:active {
+    border: 2px solid #5DADE2;
 }
 
 .red-team-picks .fourth-pick {
-    background-image: url(../img/champions/Fiora_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.red-team-picks .fourth-pick:hover,
+.red-team-picks .fourth-pick:active {
+    border: 2px solid #FF0000;
 }
 
 .blue-team-picks .fifth-pick {
-    background-image: url(../img/champions/Fizz_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.blue-team-picks .fifth-pick:hover,
+.blue-team-picks .fifth-pick:active {
+    border: 2px solid #5DADE2;
 }
 
 .red-team-picks .fifth-pick {
-    background-image: url(../img/tiles/Zyra_0.jpg);
+    background-image: url(../img/bg/F5141416.png);
     background-size: cover;
     background-position: center;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.red-team-picks .fifth-pick:hover,
+.red-team-picks .fifth-pick:active {
+    border: 2px solid #FF0000;
 }
 
 .blue-sum-1,
@@ -419,7 +497,7 @@ body {
     margin-top: 5%;
 }
 
-.rec-blue-picks p {
+.rec-blue-picks .rec-text {
     color: #5DADE2;
     font-size: 125%;
     margin-left: 25%;
@@ -440,6 +518,13 @@ body {
     height: 60px;
     width: 60px;
     border: 1px solid #000;
+}
+
+.blue-win-rate {
+    text-align: center;
+    font-size: 300%;
+    color: #5DADE2;
+    margin-top: 2.5%
 }
 
 .teamfight span {
@@ -488,7 +573,7 @@ body {
     margin-top: 5%;
 }
 
-.rec-red-picks p {
+.rec-red-picks .rec-text {
     color: #FF0000;
     font-size: 125%;
     margin-left: 25%;
@@ -509,6 +594,13 @@ body {
     height: 60px;
     width: 60px;
     border: 1px solid #000;
+}
+
+.red-win-rate {
+    text-align: center;
+    font-size: 300%;
+    color: #FF0000;
+    margin-top: 2.5%
 }
 
 
@@ -608,6 +700,56 @@ body {
     transform: skewX(10deg);
 }
 
+.blue-first-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#blue-first-ban:hover,
+#blue-first-ban:active {
+    border: 1px solid #5DADE2;
+}
+
+#blue-second-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#blue-second-ban:hover,
+#blue-second-ban:active {
+    border: 1px solid #5DADE2;
+}
+
+#blue-third-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#blue-third-ban:hover,
+#blue-third-ban:active {
+    border: 1px solid #5DADE2;
+}
+
+#blue-furth-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#blue-fourth-ban:hover,
+#blue-fourth-ban:active {
+    border: 1px solid #5DADE2;
+}
+
+#blue-fifth-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#blue-fifth-ban:hover,
+#blue-fifth-ban:active {
+    border: 1px solid #5DADE2;
+}
+
 .phase1-blue-bans {
     margin-top: 5%;
 }
@@ -650,6 +792,56 @@ body {
     transform: skewX(-10deg);
 }
 
+#red-first-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#red-first-ban:hover,
+#red-first-ban:active {
+    border: 1px solid #FF0000;
+}
+
+#red-second-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#red-second-ban:hover,
+#red-second-ban:active {
+    border: 1px solid #FF0000;
+}
+
+#red-third-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#red-third-ban:hover,
+#red-third-ban:active {
+    border: 1px solid #FF0000;
+}
+
+#red-fourth-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#red-fourth-ban:hover,
+#red-fourth-ban:active {
+    border: 1px solid #FF0000;
+}
+
+#red-fifth-ban {
+    border: 1px solid transparent;
+    transition: border 0.25s;
+}
+
+#red-fifth-ban:hover,
+#red-fifth-ban:active {
+    border: 1px solid #FF0000;
+}
+
 .phase1-red-bans {
     margin-top: 5%;
     margin-left: 7.5%;
@@ -673,7 +865,7 @@ body {
 }
 
 .champ-pic img {
-    height: 175px;
+    height: 160px;
 }
 
 .teamfight-score,
@@ -708,4 +900,73 @@ body {
 .hypercarry-score,
 .poke-score {
     border-right: 1px solid #fff;
+}
+
+
+/* CHAMP PICKING INTERFACE */
+
+.champ-pick-interface {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.champs-board {
+    margin-top: 11.5%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.champs-board ul {
+    list-style: none;
+}
+
+.champs-board ul li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+}
+
+.champs-board ul li:hover,
+.champs-board ul li:focus {
+    border: 1px solid #fff;
+}
+
+.champs-board ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#champ-search {
+    height: 50px;
+    width: 50%;
+    margin-bottom: 1%;
+    font-size: 200%;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
 }
