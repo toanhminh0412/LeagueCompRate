@@ -913,8 +913,28 @@ const proGameStart = () => {
 }
 
 
+const testing = () => {
+    let bluePicks = "gangplank,graves,syndra,caitlyn,tahmkench".split(","),
+        redPicks = "sion,sett,zoe,jhin,nautilus".split(",");
+    let blueArray = [],
+        redArray = [];
+
+    for (let b of bluePicks) {
+        blueArray.push(championsPickList[b]);
+    };
+    for (let r of redPicks) {
+        redArray.push(championsPickList[r]);
+    };
+
+    console.log(bluePicks);
+    console.log(redPicks);
+
+    calculateWinratePro(new TeamComp(blueArray), new TeamComp(redArray));
+}
+
 // app runs
 // proGameStart();
+//testing();
 
 
 const soloQueueStart = () => {
