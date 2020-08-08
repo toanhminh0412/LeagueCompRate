@@ -94,7 +94,7 @@ body {
 
 .nav-bar li {
     display: inline-block;
-    margin-left: 220px;
+    margin-left: 120px;
     padding-top: 10px;
 }
 
@@ -111,6 +111,14 @@ body {
 .nav-bar li a:hover,
 .nav-bar li a:active {
     border-bottom: 3px solid #ff9933;
+    color: #ff9933;
+}
+
+.nav-bar .signup-btn a {
+    color: #ff9933;
+}
+
+.nav-bar .instruction-btn a {
     color: #ff9933;
 }
 
@@ -202,7 +210,8 @@ body {
     width: 60%;
 }
 
-.time {
+.blue-time,
+.red-time {
     text-align: center;
     background-color: #A9A9A9;
     height: 100%;
@@ -210,7 +219,8 @@ body {
     border: 1px solid #000;
 }
 
-.time h1 {
+.blue-time h1,
+.red-time h1 {
     color: #fff;
     font-size: 230%;
     margin-top: 20%;
@@ -285,6 +295,7 @@ body {
 }
 
 .picks li {
+    position: relative;
     height: 120px;
     position: relative;
 }
@@ -968,5 +979,114 @@ body {
     font-size: 200%;
     background-color: #000;
     border-radius: 5px;
+    color: #fff;
+}
+
+
+/* INSTRUCTION */
+
+.instruction-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.instruction {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    text-align: center;
+    margin-top: 7.5%;
+}
+
+.instruction h1 {
+    color: #fff;
+    font-size: 300%;
+}
+
+.instruction-text {
+    margin-top: 10%;
+    width: 50%;
+    text-align: left;
+}
+
+.instruction-text p:first-child {
+    margin-bottom: 15%;
+}
+
+.pick-instruction {
+    color: #5DADE2;
+    font-size: 150%;
+}
+
+.ban-instruction {
+    color: #FF0000;
+    font-size: 150%;
+}
+
+.instruction-img {
+    margin-top: 10%;
+    width: 50%;
+}
+
+.pick-img {
+    position: relative;
+    width: 80%;
+    height: 120px;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+    background-color: #000;
+}
+
+.pick-img:hover,
+.pick-img:focus {
+    border: 2px solid #5DADE2;
+}
+
+.pick-img p {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: #fff;
+}
+
+.ban-img {
+    margin-top: 25%;
+}
+
+.ban-img li {
+    display: inline-block;
+}
+
+.ban-img li img {
+    width: 60px;
+    height: 60px;
+    transform: skew(-10deg);
+}
+
+.confirm-btn {
+    text-align: center;
+    margin-top: 27.5%;
+    background-color: #e67e22;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 45%;
+    padding-bottom: 5px;
+    transition: background-color 0.25s;
+}
+
+.confirm-btn:hover,
+.confirm:focus {
+    background-color: #cf6d17;
+}
+
+.confirm-btn p {
+    font-size: 200%;
     color: #fff;
 }
