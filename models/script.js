@@ -939,7 +939,7 @@ const testing = () => {
 
 const soloQueueStart = () => {
 
-    let team, order, type, index;
+    let team, order, type, redIndex, blueIndex;
     // variables for blue teamcomp and red teamcomp
     let blueTeamComp, redTeamComp;
 
@@ -974,8 +974,8 @@ const soloQueueStart = () => {
                 if (team === 'blue') {
 
                     // allowing champ repicking
-                    if (blueTeam[index]) {
-                        blueTeam.splice(index, 1);
+                    if (blueTeam[blueIndex]) {
+                        blueTeam.splice(blueIndex, 1);
                     }
 
                     if (championsPickList[champ]) {
@@ -983,7 +983,7 @@ const soloQueueStart = () => {
 
 
                         // add the picked champion to blue team
-                        blueTeam.push(championsPickList[champ]);
+                        blueTeam[blueIndex] = championsPickList[champ];
 
                         // update teamcomp score when a champ is picked
                         blueTeamComp = new TeamComp(blueTeam);
@@ -1010,14 +1010,14 @@ const soloQueueStart = () => {
                 else if (team === 'red') {
 
                     // allowing champ repicking
-                    if (redTeam[index]) {
-                        redTeam.splice(index, 1);
+                    if (redTeam[redIndex]) {
+                        redTeam.splice(redIndex, 1);
                     }
 
                     if (championsPickList[champ]) {
 
                         // add the picked champion into red team
-                        redTeam.push(championsPickList[champ]);
+                        redTeam[redIndex] = championsPickList[champ];
 
                         // update teamcomp score when a champ is picked
                         redTeamComp = new TeamComp(redTeam);
@@ -1040,8 +1040,19 @@ const soloQueueStart = () => {
                     }
                 }
 
+                console.log(blueTeamComp);
+                console.log(redTeamComp);
 
-                if (blueTeam.length === 5 && redTeam.length === 5) {
+                let checkFull = true;
+                if (blueTeam.includes(undefined)) {
+                    checkFull = false;
+                }
+
+                if (redTeam.includes(undefined)) {
+                    checkFull = false;
+                }
+
+                if (checkFull && blueTeam.length === 5 && redTeam.length === 5) {
                     calculateWinratePro(blueTeamComp, redTeamComp);
                 }
 
@@ -1153,7 +1164,7 @@ const soloQueueStart = () => {
         team = 'blue';
         order = 'first';
         type = 'pick';
-        index = 0;
+        blueIndex = 0;
     });
 
     // second blue pick
@@ -1163,7 +1174,7 @@ const soloQueueStart = () => {
         team = 'blue';
         order = 'second';
         type = 'pick';
-        index = 1;
+        blueIndex = 1;
     });
 
     // third blue pick
@@ -1173,7 +1184,7 @@ const soloQueueStart = () => {
         team = 'blue';
         order = 'third';
         type = 'pick';
-        index = 2;
+        blueIndex = 2;
     });
 
     // fourth blue pick
@@ -1183,7 +1194,7 @@ const soloQueueStart = () => {
         team = 'blue';
         order = 'fourth';
         type = 'pick';
-        index = 3;
+        blueIndex = 3;
     });
 
     // fifth blue pick
@@ -1193,7 +1204,7 @@ const soloQueueStart = () => {
         team = 'blue';
         order = 'fifth';
         type = 'pick';
-        index = 4;
+        blueIndex = 4;
     });
 
     // first red pick
@@ -1203,7 +1214,7 @@ const soloQueueStart = () => {
         team = 'red';
         order = 'first';
         type = 'pick';
-        index = 0;
+        redIndex = 0;
     });
 
     // second red pick
@@ -1213,7 +1224,7 @@ const soloQueueStart = () => {
         team = 'red';
         order = 'second';
         type = 'pick';
-        index = 1;
+        redIndex = 1;
     });
 
     // third red pick
@@ -1223,7 +1234,7 @@ const soloQueueStart = () => {
         team = 'red';
         order = 'third';
         type = 'pick';
-        index = 2;
+        redIndex = 2;
     });
 
     // fourth red pick
@@ -1233,7 +1244,7 @@ const soloQueueStart = () => {
         team = 'red';
         order = 'fourth';
         type = 'pick';
-        index = 3;
+        redIndex = 3;
     });
 
     // red blue pick
@@ -1243,10 +1254,9 @@ const soloQueueStart = () => {
         team = 'red';
         order = 'fifth';
         type = 'pick';
-        index = 4;
+        redIndex = 4;
     });
 
-    let count = 0;
 
     // search bar
     document.querySelector('#champ-search').addEventListener('keydown', e => {
@@ -1266,6 +1276,20 @@ const soloQueueStart = () => {
 
 
 
+    })
+
+    // close instruction
+    document.querySelector('.confirm-btn').addEventListener('click', () => {
+        document.querySelector('.instruction-window').style.display = 'none';
+        document.querySelector('html').style.overflowY = 'visible';
+        document.querySelector('body').style.overflowY = 'visible';
+    })
+
+    // open instruction
+    document.querySelector('.instruction-btn').addEventListener('click', () => {
+        document.querySelector('.instruction-window').style.display = 'block';
+        document.querySelector('html').style.overflowY = 'hidden';
+        document.querySelector('body').style.overflowY = 'hidden';
     })
 
 }
