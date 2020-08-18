@@ -7,11 +7,11 @@ const aatrox = new Champion('Aatrox', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 10,
+    'Teamfight': 30,
+    'Pick': 20,
+    'Hyper': 5,
     'Poke': 10,
-    'Split': 30
+    'Split': 35
 }, ['jug', 'ski'], 'Aatrox_0.jpg');
 
 const ahri = new Champion('Ahri', {
@@ -52,10 +52,10 @@ const alistar = new Champion('Alistar', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 20,
-    'Poke': 10,
+    'Teamfight': 25,
+    'Pick': 15,
+    'Hyper': 30,
+    'Poke': 15,
     'Split': 15
 }, ['van', 'war'], 'Alistar_0.jpg');
 
@@ -69,9 +69,9 @@ const amumu = new Champion('Amumu', {
 }, {
     'Teamfight': 30,
     'Pick': 25,
-    'Hyper': 20,
-    'Poke': 10,
-    'Split': 15
+    'Hyper': 14,
+    'Poke': 14,
+    'Split': 17
 }, ['van', 'div'], 'Amumu_0.jpg');
 
 const anivia = new Champion('Anivia', {
@@ -83,10 +83,10 @@ const anivia = new Champion('Anivia', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 30,
-    'Pick': 5,
-    'Hyper': 25,
-    'Poke': 20,
-    'Split': 20
+    'Pick': 10,
+    'Hyper': 30,
+    'Poke': 25,
+    'Split': 15
 }, ['bat', 'art'], 'Anivia_0.jpg');
 
 const annie = new Champion('Annie', {
@@ -98,9 +98,9 @@ const annie = new Champion('Annie', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 30,
-    'Pick': 30,
-    'Hyper': 10,
-    'Poke': 10,
+    'Pick': 20,
+    'Hyper': 15,
+    'Poke': 15,
     'Split': 20
 }, ['bur', 'ass'], 'Annie_0.jpg');
 
@@ -115,8 +115,8 @@ const aphelios = new Champion('Aphelios', {
     'Teamfight': 30,
     'Pick': 10,
     'Hyper': 25,
-    'Poke': 20,
-    'Split': 15
+    'Poke': 15,
+    'Split': 10
 }, ['mar', 'bur'], 'Aphelios_0.jpg');
 
 const ashe = new Champion('Ashe', {
@@ -127,12 +127,12 @@ const ashe = new Champion('Ashe', {
     'Utility': ['Both', 'A'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 30,
-    'Pick': 30,
-    'Hyper': 20,
+    'Teamfight': 25,
+    'Pick': 20,
+    'Hyper': 30,
     'Poke': 15,
-    'Split': 5
-}, ['mar', ''], 'Ashe_0.jpg');
+    'Split': 10
+}, ['mar', 'cat'], 'Ashe_0.jpg');
 
 const aurelionSol = new Champion('Aurelion Sol', {
     'Damage': ['Both', 'S'],
@@ -159,7 +159,7 @@ const azir = new Champion('Azir', {
 }, {
     'Teamfight': 30,
     'Pick': 20,
-    'Hyper': 20,
+    'Hyper': 30,
     'Poke': 20,
     'Split': 10
 }, ['spec', ''], 'Azir_0.jpg');
@@ -172,11 +172,11 @@ const bard = new Champion('Bard', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 10,
     'Pick': 35,
-    'Hyper': 20,
+    'Hyper': 25,
     'Poke': 15,
-    'Split': 10
+    'Split': 15
 }, ['cat', 'war'], 'Bard_0.jpg');
 
 const blitzcrank = new Champion('Blitzcrank', {
@@ -187,11 +187,11 @@ const blitzcrank = new Champion('Blitzcrank', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 30,
-    'Hyper': 15,
+    'Hyper': 20,
     'Poke': 15,
-    'Split': 20
+    'Split': 10
 }, ['cat', 'war'], 'Blitzcrank_0.jpg');
 
 const brand = new Champion('Brand', {
@@ -203,11 +203,11 @@ const brand = new Champion('Brand', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 35,
-    'Pick': 15,
-    'Hyper': 15,
-    'Poke': 25,
-    'Split': 15
-}, ['bur', 'art'], 'Brand_0,jpg');
+    'Pick': 10,
+    'Hyper': 22,
+    'Poke': 23,
+    'Split': 10
+}, ['bur', 'art'], 'Brand_0.jpg');
 
 const braum = new Champion('Braum', {
     'Damage': ['Burst', 'D'],
@@ -217,11 +217,11 @@ const braum = new Champion('Braum', {
     'Utility': ['Both', 'S'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
-    'Pick': 20,
-    'Hyper': 30,
-    'Poke': 15,
-    'Split': 15
+    'Teamfight': 16,
+    'Pick': 16,
+    'Hyper': 36,
+    'Poke': 16,
+    'Split': 16
 }, ['war', 'van'], 'Braum_0.jpg');
 
 const caitlyn = new Champion('Caitlyn', {
@@ -232,11 +232,11 @@ const caitlyn = new Champion('Caitlyn', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 25,
-    'Pick': 20,
-    'Hyper': 20,
-    'Poke': 25,
-    'Split': 10
+    'Teamfight': 23,
+    'Pick': 15,
+    'Hyper': 23,
+    'Poke': 24,
+    'Split': 15
 }, ['cat', 'war'], 'Caitlyn_0.jpg');
 
 const camille = new Champion('Camille', {
@@ -247,9 +247,9 @@ const camille = new Champion('Camille', {
     'Utility': ['Off', 'B'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 30,
-    'Hyper': 5,
+    'Hyper': 10,
     'Poke': 10,
     'Split': 35
 }, ['div', 'cat'], 'Camille_0.jpg');
@@ -279,8 +279,8 @@ const chogath = new Champion('Chogath', {
 }, {
     'Teamfight': 20,
     'Pick': 15,
-    'Hyper': 15,
-    'Poke': 20,
+    'Hyper': 20,
+    'Poke': 15,
     'Split': 30
 }, ['spec', ''], 'Chogath_0.jpg');
 
@@ -292,9 +292,9 @@ const corki = new Champion('Corki', {
     'Utility': ['Def', 'D'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 10,
+    'Teamfight': 25,
+    'Pick': 15,
+    'Hyper': 25,
     'Poke': 25,
     'Split': 10
 }, ['mar', 'bat'], 'Corki_0.jpg');
@@ -307,9 +307,9 @@ const darius = new Champion('Darius', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 25,
-    'Pick': 15,
-    'Hyper': 10,
+    'Teamfight': 20,
+    'Pick': 10,
+    'Hyper': 15,
     'Poke': 10,
     'Split': 40
 }, ['jug', 'ski'], 'Darius_0.jpg');
@@ -323,8 +323,8 @@ const diana = new Champion('Diana', {
     'Range': ['Abilities', 'B']
 }, {
     'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 5,
+    'Pick': 20,
+    'Hyper': 10,
     'Poke': 10,
     'Split': 30
 }, ['ass', 'div'], 'Diana_0.jpg');
@@ -337,11 +337,11 @@ const draven = new Champion('Draven', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 28,
     'Pick': 15,
-    'Hyper': 25,
-    'Poke': 10,
-    'Split': 20
+    'Hyper': 30,
+    'Poke': 12,
+    'Split': 15
 }, ['mar', 'ski'], 'Draven_0.jpg');
 
 const drMundo = new Champion('Dr Mundo', {
@@ -352,11 +352,11 @@ const drMundo = new Champion('Dr Mundo', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 15,
     'Hyper': 15,
     'Poke': 20,
-    'Split': 30
+    'Split': 35
 }, ['jug', 'van'], 'DrMundo_0.jpg');
 
 const ekko = new Champion('Ekko', {
@@ -367,11 +367,11 @@ const ekko = new Champion('Ekko', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 25,
-    'Pick': 30,
-    'Hyper': 5,
+    'Teamfight': 22,
+    'Pick': 28,
+    'Hyper': 20,
     'Poke': 10,
-    'Split': 30
+    'Split': 20
 }, ['ass', 'div'], 'Ekko_0.jpg');
 
 const elise = new Champion('Elise', {
@@ -382,9 +382,9 @@ const elise = new Champion('Elise', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 20,
-    'Pick': 35,
-    'Hyper': 10,
+    'Teamfight': 10,
+    'Pick': 30,
+    'Hyper': 15,
     'Poke': 20,
     'Split': 15
 }, ['ski', 'bur'], 'Elise_0.jpg');
@@ -397,10 +397,10 @@ const evelynn = new Champion('Evelynn', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 40,
-    'Hyper': 5,
-    'Poke': 20,
+    'Hyper': 15,
+    'Poke': 15,
     'Split': 15
 }, ['ass', 'bur'], 'Evelynn_0.jpg');
 
@@ -414,9 +414,9 @@ const ezreal = new Champion('Ezreal', {
 }, {
     'Teamfight': 20,
     'Pick': 15,
-    'Hyper': 20,
-    'Poke': 35,
-    'Split': 10
+    'Hyper': 30,
+    'Poke': 30,
+    'Split': 5
 }, ['mar', 'art'], 'Ezreal_0.jpg');
 
 const fiddlesticks = new Champion('Fiddlesticks', {
@@ -428,10 +428,10 @@ const fiddlesticks = new Champion('Fiddlesticks', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 35,
-    'Pick': 35,
+    'Pick': 25,
     'Hyper': 10,
-    'Poke': 10,
-    'Split': 10
+    'Poke': 15,
+    'Split': 15
 }, ['spec', ''], 'FiddleSticks_0.jpg');
 
 const fiora = new Champion('Fiora', {
@@ -443,8 +443,8 @@ const fiora = new Champion('Fiora', {
     'Range': ['Abilities', 'D']
 }, {
     'Teamfight': 15,
-    'Pick': 35,
-    'Hyper': 10,
+    'Pick': 25,
+    'Hyper': 20,
     'Poke': 5,
     'Split': 35
 }, ['ski', 'jug'], 'Fiora_0.jpg');
@@ -487,11 +487,11 @@ const gangplank = new Champion('Gangplank', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'A']
 }, {
-    'Teamfight': 35,
-    'Pick': 15,
-    'Hyper': 10,
-    'Poke': 20,
-    'Split': 20
+    'Teamfight': 30,
+    'Pick': 10,
+    'Hyper': 20,
+    'Poke': 25,
+    'Split': 15
 }, ['spec', ''], 'Gangplank_0.jpg');
 
 const garen = new Champion('Garen', {
@@ -502,11 +502,11 @@ const garen = new Champion('Garen', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 10,
+    'Teamfight': 20,
+    'Pick': 20,
+    'Hyper': 20,
     'Poke': 5,
-    'Split': 25
+    'Split': 35
 }, ['jug', 'van'], 'Garen_0.jpg');
 
 const gnar = new Champion('Gnar', {
@@ -518,9 +518,9 @@ const gnar = new Champion('Gnar', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 30,
-    'Pick': 25,
+    'Pick': 20,
     'Hyper': 10,
-    'Poke': 15,
+    'Poke': 20,
     'Split': 20
 }, ['war', 'van'], 'Gnar_0.jpg');
 
@@ -547,9 +547,9 @@ const graves = new Champion('Graves', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 25,
+    'Teamfight': 20,
     'Pick': 30,
-    'Hyper': 10,
+    'Hyper': 15,
     'Poke': 15,
     'Split': 20
 }, ['spec', ''], 'Graves_0.jpg');
@@ -581,7 +581,7 @@ const heimerdinger = new Champion('Heimerdinger', {
     'Pick': 10,
     'Hyper': 15,
     'Poke': 25,
-    'Split': 23
+    'Split': 30
 }, ['wpec', ''], 'Heimerdinger_0.jpg');
 
 const illaoi = new Champion('Illaoi', {
@@ -592,9 +592,9 @@ const illaoi = new Champion('Illaoi', {
     'Utility': ['Off', 'D'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 5,
-    'Hyper': 5,
+    'Teamfight': 20,
+    'Pick': 10,
+    'Hyper': 10,
     'Poke': 20,
     'Split': 40
 }, ['jug', 'ski'], 'Illaoi_0.jpg');
@@ -607,11 +607,11 @@ const irelia = new Champion('Irelia', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 5,
+    'Teamfight': 25,
+    'Pick': 20,
+    'Hyper': 20,
     'Poke': 5,
-    'Split': 35
+    'Split': 30
 }, ['div', 'jug'], 'Irelia_0.jpg');
 
 const ivern = new Champion('Ivern', {
@@ -622,11 +622,11 @@ const ivern = new Champion('Ivern', {
     'Utility': ['Both', 'A'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 20,
-    'Pick': 20,
-    'Hyper': 35,
+    'Teamfight': 15,
+    'Pick': 15,
+    'Hyper': 40,
     'Poke': 20,
-    'Split': 5
+    'Split': 10
 }, ['cat', 'enc'], 'Ivern_0.jpg');
 
 const janna = new Champion('Janna', {
@@ -637,11 +637,11 @@ const janna = new Champion('Janna', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 15,
-    'Pick': 15,
+    'Teamfight': 10,
+    'Pick': 7,
     'Hyper': 40,
-    'Poke': 20,
-    'Split': 10
+    'Poke': 27,
+    'Split': 16
 }, ['enc', 'art'], 'Janna_0.jpg');
 
 const jarvan = new Champion('Jarvan IV', {
@@ -655,8 +655,8 @@ const jarvan = new Champion('Jarvan IV', {
     'Teamfight': 30,
     'Pick': 30,
     'Hyper': 10,
-    'Poke': 10,
-    'Split': 10
+    'Poke': 15,
+    'Split': 15
 }, ['div', 'van'], 'JarvanIV_0.jpg');
 
 const jax = new Champion('Jax', {
@@ -668,8 +668,8 @@ const jax = new Champion('Jax', {
     'Range': ['Abilties', 'D']
 }, {
     'Teamfight': 10,
-    'Pick': 30,
-    'Hyper': 20,
+    'Pick': 20,
+    'Hyper': 30,
     'Poke': 5,
     'Split': 35
 }, ['ski', 'jug'], 'Jax_0.jpg');
@@ -682,10 +682,10 @@ const jayce = new Champion('Jayce', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 25,
+    'Teamfight': 20,
     'Pick': 20,
     'Hyper': 5,
-    'Poke': 30,
+    'Poke': 35,
     'Split': 20
 }, ['art', 'bur'], 'Jayce_0.jpg');
 
@@ -697,11 +697,11 @@ const jhin = new Champion('Jhin', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 35,
     'Pick': 25,
     'Hyper': 20,
     'Poke': 20,
-    'Split': 5
+    'Split': 10
 }, ['mar', 'cat'], 'Jhin_0.jpg');
 
 const jinx = new Champion('Jinx', {
@@ -712,11 +712,11 @@ const jinx = new Champion('Jinx', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 35,
-    'Pick': 15,
-    'Hyper': 30,
-    'Poke': 15,
-    'Split': 5
+    'Teamfight': 33,
+    'Pick': 10,
+    'Hyper': 35,
+    'Poke': 12,
+    'Split': 10
 }, ['mar', ''], 'Jinx_0.jpg');
 
 const kaisa = new Champion('Kaisa', {
@@ -728,8 +728,8 @@ const kaisa = new Champion('Kaisa', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 30,
-    'Pick': 15,
-    'Hyper': 30,
+    'Pick': 10,
+    'Hyper': 35,
     'Poke': 20,
     'Split': 5
 }, ['mar', 'div'], 'Kaisa_0.jpg');
@@ -743,9 +743,9 @@ const kalista = new Champion('Kalista', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 35,
-    'Pick': 25,
+    'Pick': 20,
     'Hyper': 30,
-    'Poke': 5,
+    'Poke': 10,
     'Split': 5
 }, ['mar', 'ski'], 'Kalista_0.jpg');
 
@@ -757,11 +757,11 @@ const karma = new Champion('Karma', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 25,
-    'Pick': 20,
-    'Hyper': 25,
+    'Teamfight': 20,
+    'Pick': 15,
+    'Hyper': 30,
     'Poke': 25,
-    'Split': 5
+    'Split': 10
 }, ['enc', 'bur'], 'Karma_0.jpg');
 
 const karthus = new Champion('Karthus', {
@@ -773,10 +773,10 @@ const karthus = new Champion('Karthus', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 30,
-    'Pick': 20,
-    'Hyper': 20,
-    'Poke': 25,
-    'Split': 5
+    'Pick': 10,
+    'Hyper': 30,
+    'Poke': 20,
+    'Split': 10
 }, ['bat', 'cat'], 'Karthus_0.jpg');
 
 const kassadin = new Champion('Kassadin', {
@@ -787,11 +787,11 @@ const kassadin = new Champion('Kassadin', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 25,
+    'Teamfight': 20,
     'Pick': 30,
-    'Hyper': 15,
+    'Hyper': 25,
     'Poke': 5,
-    'Split': 25
+    'Split': 20
 }, ['ass', 'bur'], 'Kassadin_0.jpg');
 
 const katarina = new Champion('Katarina', {
@@ -802,9 +802,9 @@ const katarina = new Champion('Katarina', {
     'Utility': ['Off', 'D'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 30,
-    'Hyper': 20,
+    'Hyper': 25,
     'Poke': 5,
     'Split': 10
 }, ['ass', 'div'], 'Katarina_0.jpg');
@@ -820,8 +820,8 @@ const kayle = new Champion('Kayle', {
     'Teamfight': 35,
     'Pick': 5,
     'Hyper': 30,
-    'Poke': 10,
-    'Split': 20
+    'Poke': 12,
+    'Split': 18
 }, ['spec', ''], 'Kayle_0.jpg');
 
 const kayn = new Champion('Kayn', {
@@ -832,11 +832,11 @@ const kayn = new Champion('Kayn', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'C']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 35,
-    'Hyper': 10,
+    'Hyper': 12,
     'Poke': 15,
-    'Split': 10
+    'Split': 13
 }, ['ski', 'ass'], 'Kayn_0.jpg');
 
 const kennen = new Champion('Kennen', {
@@ -848,10 +848,10 @@ const kennen = new Champion('Kennen', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 35,
-    'Pick': 25,
+    'Pick': 20,
     'Hyper': 10,
     'Poke': 15,
-    'Split': 15
+    'Split': 20
 }, ['spec', ''], 'Kennen_0.jpg');
 
 const khazix = new Champion("Kha'zix", {
@@ -862,11 +862,11 @@ const khazix = new Champion("Kha'zix", {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 16,
     'Pick': 40,
-    'Hyper': 10,
-    'Poke': 15,
-    'Split': 15
+    'Hyper': 11,
+    'Poke': 17,
+    'Split': 16
 }, ['ass', 'bur'], 'Khazix_0.jpg');
 
 const kindred = new Champion('Kindred', {
@@ -878,10 +878,10 @@ const kindred = new Champion('Kindred', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 30,
-    'Pick': 20,
-    'Hyper': 20,
+    'Pick': 15,
+    'Hyper': 30,
     'Poke': 15,
-    'Split': 15
+    'Split': 10
 }, ['mar', ''], 'Kindred_0.jpg');
 
 const kled = new Champion('Kled', {
@@ -893,10 +893,10 @@ const kled = new Champion('Kled', {
     'Range': ['Abilities', 'C']
 }, {
     'Teamfight': 20,
-    'Pick': 35,
+    'Pick': 30,
     'Hyper': 10,
     'Poke': 5,
-    'Split': 30
+    'Split': 35
 }, ['div', 'jug'], 'Kled_0.jpg');
 
 const kogmaw = new Champion("Kog'Maw", {
@@ -938,11 +938,11 @@ const leesin = new Champion('Leesin', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 30,
-    'Hyper': 15,
-    'Poke': 10,
-    'Split': 15
+    'Teamfight': 22,
+    'Pick': 32,
+    'Hyper': 17,
+    'Poke': 12,
+    'Split': 17
 }, ['div', 'bur'], 'LeeSin_0.jpg');
 
 const leona = new Champion('Leona', {
@@ -954,8 +954,8 @@ const leona = new Champion('Leona', {
     'Range': ['Abilities', 'C']
 }, {
     'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 25,
+    'Pick': 20,
+    'Hyper': 30,
     'Poke': 10,
     'Split': 10
 }, ['van', 'war'], 'Leona_0.jpg');
@@ -998,11 +998,11 @@ const lulu = new Champion('Lulu', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 15,
     'Hyper': 40,
     'Poke': 20,
-    'Split': 5
+    'Split': 10
 }, ['enc', ''], 'Lulu_0.jpg');
 
 const lux = new Champion('Lux', {
@@ -1044,10 +1044,10 @@ const malzahar = new Champion('Malzahar', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 25,
-    'Pick': 35,
-    'Hyper': 10,
+    'Pick': 30,
+    'Hyper': 15,
     'Poke': 25,
-    'Split': 10
+    'Split': 5
 }, ['bat', 'ski'], 'Malzahar_0.jpg');
 
 const maokai = new Champion('Maokai', {
@@ -1073,11 +1073,11 @@ const masterYi = new Champion('Master Yi', {
     'Utility': ['None', 'D'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
-    'Pick': 35,
-    'Hyper': 5,
+    'Teamfight': 15,
+    'Pick': 25,
+    'Hyper': 35,
     'Poke': 5,
-    'Split': 35
+    'Split': 20
 }, ['ski', 'jug'], 'MasterYi_0.jpg');
 
 const missFortune = new Champion('Miss Fortune', {
@@ -1088,11 +1088,11 @@ const missFortune = new Champion('Miss Fortune', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 35,
-    'Pick': 25,
-    'Hyper': 20,
-    'Poke': 10,
-    'Split': 10
+    'Teamfight': 36,
+    'Pick': 15,
+    'Hyper': 22,
+    'Poke': 15,
+    'Split': 11
 }, ['mar', ''], 'MissFortune_0.jpg');
 
 const wukong = new Champion('Wukong', {
@@ -1119,9 +1119,9 @@ const mordekaiser = new Champion('Mordekaiser', {
     'Range': ['Abilities', 'C']
 }, {
     'Teamfight': 20,
-    'Pick': 30,
+    'Pick': 25,
     'Hyper': 10,
-    'Poke': 5,
+    'Poke': 10,
     'Split': 35
 }, ['jug', 'ski'], 'Mordekaiser_0.jpg');
 
@@ -1133,11 +1133,11 @@ const morgana = new Champion('Morgana', {
     'Utility': ['Both', 'A'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 25,
-    'Pick': 20,
-    'Hyper': 20,
+    'Teamfight': 20,
+    'Pick': 25,
+    'Hyper': 25,
     'Poke': 20,
-    'Split': 15
+    'Split': 10
 }, ['cat', 'enc'], 'Morgana_0.jpg');
 
 const nami = new Champion('Nami', {
@@ -1148,11 +1148,11 @@ const nami = new Champion('Nami', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 20,
     'Pick': 15,
     'Hyper': 35,
-    'Poke': 15,
-    'Split': 5
+    'Poke': 18,
+    'Split': 12
 }, ['enc', 'cat'], 'Nami_0.jpg');
 
 const nasus = new Champion('Nasus', {
@@ -1163,10 +1163,10 @@ const nasus = new Champion('Nasus', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 15,
-    'Pick': 25,
-    'Hyper': 5,
-    'Poke': 15,
+    'Teamfight': 10,
+    'Pick': 15,
+    'Hyper': 30,
+    'Poke': 5,
     'Split': 40
 }, ['jug', 'ski'], 'Nasus_0.jpg');
 
@@ -1179,8 +1179,8 @@ const nautilus = new Champion('Nautilus', {
     'Range': ['Abilities', 'B']
 }, {
     'Teamfight': 30,
-    'Pick': 35,
-    'Hyper': 20,
+    'Pick': 30,
+    'Hyper': 25,
     'Poke': 5,
     'Split': 10
 }, ['van', ''], 'Nautilus_0.jpg');
@@ -1193,9 +1193,9 @@ const neeko = new Champion('Neeko', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 20,
-    'Hyper': 5,
+    'Hyper': 10,
     'Poke': 25,
     'Split': 15
 }, ['bur', 'cat'], 'Neeko_0.jpg');
@@ -1223,9 +1223,9 @@ const nocturne = new Champion('Nocturne', {
     'Utility': ['Off', 'B'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 40,
-    'Hyper': 5,
+    'Hyper': 10,
     'Poke': 10,
     'Split': 25
 }, ['ass', 'ski'], 'Nocturne_0.jpg');
@@ -1239,9 +1239,9 @@ const nunu = new Champion('Nunu', {
     'Range': ['Abilities', 'C']
 }, {
     'Teamfight': 30,
-    'Pick': 35,
+    'Pick': 30,
     'Hyper': 15,
-    'Poke': 5,
+    'Poke': 10,
     'Split': 15
 }, ['van', 'cat'], 'Nunu_0.jpg');
 
@@ -1253,11 +1253,11 @@ const olaf = new Champion('Olaf', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
-    'Pick': 30,
-    'Hyper': 5,
+    'Teamfight': 15,
+    'Pick': 25,
+    'Hyper': 10,
     'Poke': 15,
-    'Split': 30
+    'Split': 35
 }, ['div', 'jug'], 'Olaf_0.jpg');
 
 const orianna = new Champion('Orianna', {
@@ -1268,11 +1268,11 @@ const orianna = new Champion('Orianna', {
     'Utility': ['Both', 'A'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
-    'Pick': 20,
-    'Hyper': 15,
+    'Teamfight': 30,
+    'Pick': 15,
+    'Hyper': 20,
     'Poke': 25,
-    'Split': 5
+    'Split': 10
 }, ['bur', 'art'], 'Orianna_0.jpg');
 
 const ornn = new Champion('Ornn', {
@@ -1283,11 +1283,11 @@ const ornn = new Champion('Ornn', {
     'Utility': ['Both', 'A'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 35,
-    'Pick': 30,
-    'Hyper': 10,
-    'Poke': 5,
-    'Split': 20
+    'Teamfight': 30,
+    'Pick': 20,
+    'Hyper': 15,
+    'Poke': 10,
+    'Split': 25
 }, ['van', 'cat'], 'Ornn_0.jpg');
 
 const pantheon = new Champion('Pantheon', {
@@ -1313,9 +1313,9 @@ const poppy = new Champion('Poppy', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 25,
+    'Teamfight': 20,
     'Pick': 20,
-    'Hyper': 20,
+    'Hyper': 25,
     'Poke': 10,
     'Split': 25
 }, ['war', 'van'], 'Poppy_0.jpg');
@@ -1328,11 +1328,11 @@ const pyke = new Champion('Pyke', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 20,
     'Pick': 40,
-    'Hyper': 5,
-    'Poke': 10,
-    'Split': 15
+    'Hyper': 12,
+    'Poke': 12,
+    'Split': 16
 }, ['ass', 'bur'], 'Pyke_0.jpg');
 
 const qiyana = new Champion('Qiyana', {
@@ -1343,10 +1343,10 @@ const qiyana = new Champion('Qiyana', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 35,
-    'Hyper': 5,
-    'Poke': 15,
+    'Teamfight': 25,
+    'Pick': 30,
+    'Hyper': 10,
+    'Poke': 20,
     'Split': 15
 }, ['ass', 'bur'], 'Qiyana_0.jpg');
 
@@ -1359,8 +1359,8 @@ const quinn = new Champion('Quinn', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 20,
-    'Pick': 40,
-    'Hyper': 5,
+    'Pick': 30,
+    'Hyper': 15,
     'Poke': 15,
     'Split': 20
 }, ['spec', ''], 'Quinn_0.jpg');
@@ -1373,11 +1373,11 @@ const rakan = new Champion('Rakan', {
     'Utility': ['Both', 'A'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 35,
-    'Pick': 30,
-    'Hyper': 25,
-    'Poke': 5,
-    'Split': 5
+    'Teamfight': 30,
+    'Pick': 20,
+    'Hyper': 30,
+    'Poke': 10,
+    'Split': 10
 }, ['cat', 'war'], 'Rakan_0.jpg');
 
 const rammus = new Champion('Rammus', {
@@ -1388,11 +1388,11 @@ const rammus = new Champion('Rammus', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 30,
-    'Pick': 35,
-    'Hyper': 15,
-    'Poke': 5,
-    'Split': 15
+    'Teamfight': 20,
+    'Pick': 30,
+    'Hyper': 20,
+    'Poke': 13,
+    'Split': 17
 }, ['van', 'div'], 'Rammus_0.jpg');
 
 const reksai = new Champion("Rek'Sai", {
@@ -1403,9 +1403,9 @@ const reksai = new Champion("Rek'Sai", {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 25,
+    'Teamfight': 20,
     'Pick': 40,
-    'Hyper': 5,
+    'Hyper': 10,
     'Poke': 10,
     'Split': 20
 }, ['div', 'ski'], 'RekSai_0.jpg');
@@ -1419,8 +1419,8 @@ const renekton = new Champion('Renekton', {
     'Range': ['Abilities', 'D']
 }, {
     'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 10,
+    'Pick': 20,
+    'Hyper': 15,
     'Poke': 5,
     'Split': 35
 }, ['div', 'jug'], 'Renekton_0.jpg');
@@ -1433,9 +1433,9 @@ const rengar = new Champion('Rengar', {
     'Utility': ['Off', 'D'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
+    'Teamfight': 15,
     'Pick': 35,
-    'Hyper': 5,
+    'Hyper': 10,
     'Poke': 10,
     'Split': 30
 }, ['ass', 'div'], 'Rengar_0.jpg');
@@ -1448,9 +1448,9 @@ const riven = new Champion('Riven', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 30,
-    'Hyper': 5,
+    'Teamfight': 20,
+    'Pick': 25,
+    'Hyper': 20,
     'Poke': 5,
     'Split': 30
 }, ['ski', 'div'], 'Riven_0.jpg');
@@ -1463,10 +1463,10 @@ const rumble = new Champion('Rumble', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 5,
-    'Poke': 15,
+    'Teamfight': 25,
+    'Pick': 15,
+    'Hyper': 15,
+    'Poke': 20,
     'Split': 25
 }, ['bat', 'cat'], 'Rumble_0.jpg');
 
@@ -1479,8 +1479,8 @@ const ryze = new Champion('Ryze', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 5,
+    'Pick': 20,
+    'Hyper': 20,
     'Poke': 15,
     'Split': 25
 }, ['bat', ''], 'Ryze_0.jpg');
@@ -1508,11 +1508,11 @@ const senna = new Champion('Senna', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 25,
-    'Poke': 20,
-    'Split': 5
+    'Teamfight': 20,
+    'Pick': 15,
+    'Hyper': 27,
+    'Poke': 28,
+    'Split': 10
 }, ['mar', 'enc'], 'Senna_0.jpg');
 
 const sett = new Champion('Sett', {
@@ -1524,9 +1524,9 @@ const sett = new Champion('Sett', {
     'Range': ['Abilities', 'D']
 }, {
     'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 10,
-    'Poke': 5,
+    'Pick': 15,
+    'Hyper': 15,
+    'Poke': 10,
     'Split': 35
 }, ['jug', 'ski'], 'Sett_0.jpg');
 
@@ -1538,11 +1538,11 @@ const shaco = new Champion('Shaco', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
-    'Pick': 40,
+    'Teamfight': 17,
+    'Pick': 35,
     'Hyper': 10,
-    'Poke': 20,
-    'Split': 10
+    'Poke': 18,
+    'Split': 20
 }, ['ass', 'bur'], 'Shaco_0.jpg');
 
 const shen = new Champion('Shen', {
@@ -1553,11 +1553,11 @@ const shen = new Champion('Shen', {
     'Utility': ['Both', 'A'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 25,
-    'Pick': 30,
-    'Hyper': 20,
+    'Teamfight': 20,
+    'Pick': 20,
+    'Hyper': 30,
     'Poke': 5,
-    'Split': 20
+    'Split': 25
 }, ['war', 'van'], 'Shen_0.jpg');
 
 const shyvana = new Champion('Shyvana', {
@@ -1568,11 +1568,11 @@ const shyvana = new Champion('Shyvana', {
     'Utility': ['Off', 'D'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 20,
-    'Hyper': 5,
+    'Teamfight': 25,
+    'Pick': 15,
+    'Hyper': 20,
     'Poke': 25,
-    'Split': 20
+    'Split': 15
 }, ['jug', 'div'], 'Shyvana_0.jpg');
 
 const singed = new Champion('Singed', {
@@ -1583,11 +1583,11 @@ const singed = new Champion('Singed', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 5,
-    'Poke': 5,
-    'Split': 35
+    'Teamfight': 25,
+    'Pick': 15,
+    'Hyper': 25,
+    'Poke': 10,
+    'Split': 25
 }, ['spec', 'ski'], 'Singed_0.jpg');
 
 const sion = new Champion('Sion', {
@@ -1613,9 +1613,9 @@ const sivir = new Champion('Sivir', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 15,
-    'Hyper': 25,
+    'Hyper': 30,
     'Poke': 15,
     'Split': 10
 }, ['mar', 'enc'], 'Sivir_0.jpg');
@@ -1628,11 +1628,11 @@ const skarner = new Champion('Skaner', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
-    'Pick': 40,
+    'Teamfight': 15,
+    'Pick': 35,
     'Hyper': 15,
     'Poke': 5,
-    'Split': 20
+    'Split': 25
 }, ['div', 'van'], 'Skarner_0.jpg');
 
 const sona = new Champion('Sona', {
@@ -1658,11 +1658,11 @@ const soraka = new Champion('Soraka', {
     'Utility': ['Def', 'S'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 30,
-    'Pick': 10,
+    'Teamfight': 25,
+    'Pick': 5,
     'Hyper': 35,
-    'Poke': 15,
-    'Split': 10
+    'Poke': 20,
+    'Split': 15
 }, ['enc', ''], 'Soraka_0.jpg');
 
 const swain = new Champion('Swain', {
@@ -1673,9 +1673,9 @@ const swain = new Champion('Swain', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
-    'Pick': 15,
-    'Hyper': 5,
+    'Teamfight': 30,
+    'Pick': 10,
+    'Hyper': 15,
     'Poke': 20,
     'Split': 25
 }, ['bat', 'div'], 'Swain_0.jpg');
@@ -1688,10 +1688,10 @@ const sylas = new Champion('Sylas', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 30,
-    'Hyper': 10,
-    'Poke': 5,
+    'Teamfight': 22,
+    'Pick': 23,
+    'Hyper': 15,
+    'Poke': 15,
     'Split': 25
 }, ['bur', 'ski'], 'Sylas_0.jpg');
 
@@ -1704,9 +1704,9 @@ const syndra = new Champion('Syndra', {
     'Range': ['Both', 'S']
 }, {
     'Teamfight': 25,
-    'Pick': 25,
-    'Hyper': 5,
-    'Poke': 35,
+    'Pick': 20,
+    'Hyper': 15,
+    'Poke': 30,
     'Split': 10
 }, ['bur', 'art'], 'Syndra_0.jpg');
 
@@ -1719,10 +1719,10 @@ const tahmKench = new Champion('Tahm Kench', {
     'Range': ['Abilities', 'C']
 }, {
     'Teamfight': 15,
-    'Pick': 30,
-    'Hyper': 30,
-    'Poke': 5,
-    'Split': 20
+    'Pick': 20,
+    'Hyper': 25,
+    'Poke': 15,
+    'Split': 25
 }, ['war', 'jug'], 'TahmKench_0.jpg');
 
 const taliyah = new Champion('Taliyah', {
@@ -1733,9 +1733,9 @@ const taliyah = new Champion('Taliyah', {
     'Utility': ['Off', 'B'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 35,
-    'Pick': 20,
-    'Hyper': 5,
+    'Teamfight': 25,
+    'Pick': 25,
+    'Hyper': 20,
     'Poke': 30,
     'Split': 10
 }, ['bat', 'cat'], 'Taliyah_0.jpg');
@@ -1778,11 +1778,11 @@ const teemo = new Champion('Teemo', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 25,
-    'Pick': 20,
-    'Hyper': 10,
-    'Poke': 15,
-    'Split': 30
+    'Teamfight': 20,
+    'Pick': 10,
+    'Hyper': 18,
+    'Poke': 23,
+    'Split': 29
 }, ['spec', ''], 'Teemo_0.jpg');
 
 const thresh = new Champion('Thresh', {
@@ -1793,8 +1793,8 @@ const thresh = new Champion('Thresh', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 15,
-    'Pick': 25,
+    'Teamfight': 20,
+    'Pick': 20,
     'Hyper': 30,
     'Poke': 20,
     'Split': 10
@@ -1808,10 +1808,10 @@ const tristana = new Champion('Tristana', {
     'Utility': ['Def', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 20,
     'Hyper': 25,
-    'Poke': 15,
+    'Poke': 20,
     'Split': 10
 }, ['mar', ''], 'Tristana_0.jpg');
 
@@ -1823,11 +1823,11 @@ const trundle = new Champion('Trundle', {
     'Utility': ['Both', 'B'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
-    'Hyper': 10,
+    'Teamfight': 21,
+    'Pick': 22,
+    'Hyper': 17,
     'Poke': 10,
-    'Split': 25
+    'Split': 30
 }, ['jug', 'ski'], 'Trundle_0.jpg');
 
 const tryndamere = new Champion('Tryndamere', {
@@ -1838,11 +1838,11 @@ const tryndamere = new Champion('Tryndamere', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 15,
-    'Pick': 25,
-    'Hyper': 15,
-    'Poke': 5,
-    'Split': 40
+    'Teamfight': 10,
+    'Pick': 20,
+    'Hyper': 25,
+    'Poke': 10,
+    'Split': 35
 }, ['ski', 'jug'], 'Tryndamere_0.jpg');
 
 const twistedFate = new Champion('Twisted Fate', {
@@ -1854,10 +1854,10 @@ const twistedFate = new Champion('Twisted Fate', {
     'Range': ['Both', 'A']
 }, {
     'Teamfight': 20,
-    'Pick': 40,
-    'Hyper': 5,
-    'Poke': 20,
-    'Split': 15
+    'Pick': 30,
+    'Hyper': 15,
+    'Poke': 25,
+    'Split': 10
 }, ['bur', 'bat'], 'TwistedFate_0.jpg');
 
 const twitch = new Champion('Twitch', {
@@ -1869,10 +1869,10 @@ const twitch = new Champion('Twitch', {
     'Range': ['Both', 'S']
 }, {
     'Teamfight': 35,
-    'Pick': 20,
+    'Pick': 15,
     'Hyper': 35,
-    'Poke': 5,
-    'Split': 5
+    'Poke': 8,
+    'Split': 7
 }, ['mar', ''], 'Twitch_0.jpg');
 
 const udyr = new Champion('Udyr', {
@@ -1883,11 +1883,11 @@ const udyr = new Champion('Udyr', {
     'Utility': ['Off', 'D'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 15,
-    'Pick': 30,
-    'Hyper': 10,
+    'Teamfight': 10,
+    'Pick': 25,
+    'Hyper': 25,
     'Poke': 5,
-    'Split': 40
+    'Split': 35
 }, ['jug', 'ski'], 'Udyr_0.jpg');
 
 const urgot = new Champion('Urgot', {
@@ -1898,10 +1898,10 @@ const urgot = new Champion('Urgot', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 15,
     'Hyper': 10,
-    'Poke': 10,
+    'Poke': 15,
     'Split': 35
 }, ['jug', 'ski'], 'Urgot_0.jpg');
 
@@ -1913,10 +1913,10 @@ const varus = new Champion('Varus', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 10,
     'Hyper': 30,
-    'Poke': 20,
+    'Poke': 25,
     'Split': 5
 }, ['mar', 'art'], 'Varus_0.jpg');
 
@@ -1928,11 +1928,11 @@ const vayne = new Champion('Vayne', {
     'Utility': ['Def', 'D'],
     'Range': ['Both', 'B']
 }, {
-    'Teamfight': 35,
-    'Pick': 20,
-    'Hyper': 35,
+    'Teamfight': 30,
+    'Pick': 10,
+    'Hyper': 40,
     'Poke': 5,
-    'Split': 5
+    'Split': 15
 }, ['mar', ''], 'Vayne_0.jpg');
 
 const veigar = new Champion('Veigar', {
@@ -1945,9 +1945,9 @@ const veigar = new Champion('Veigar', {
 }, {
     'Teamfight': 30,
     'Pick': 20,
-    'Hyper': 20,
+    'Hyper': 25,
     'Poke': 20,
-    'Split': 10
+    'Split': 5
 }, ['bur', 'art'], 'Veigar_0.jpg');
 
 const velkoz = new Champion('Velkoz', {
@@ -1959,10 +1959,10 @@ const velkoz = new Champion('Velkoz', {
     'Range': ['Both', 'S']
 }, {
     'Teamfight': 35,
-    'Pick': 10,
-    'Hyper': 10,
+    'Pick': 5,
+    'Hyper': 20,
     'Poke': 35,
-    'Split': 10
+    'Split': 5
 }, ['art', 'bur'], 'Velkoz_0.jpg');
 
 const vi = new Champion('Vi', {
@@ -1973,11 +1973,11 @@ const vi = new Champion('Vi', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'B']
 }, {
-    'Teamfight': 25,
-    'Pick': 35,
-    'Hyper': 10,
-    'Poke': 5,
-    'Split': 25
+    'Teamfight': 21,
+    'Pick': 36,
+    'Hyper': 11,
+    'Poke': 6,
+    'Split': 26
 }, ['div', 'bur'], 'Vi_0.jpg');
 
 const viktor = new Champion('Viktor', {
@@ -1988,9 +1988,9 @@ const viktor = new Champion('Viktor', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
-    'Pick': 10,
-    'Hyper': 20,
+    'Teamfight': 30,
+    'Pick': 5,
+    'Hyper': 30,
     'Poke': 25,
     'Split': 10
 }, ['bat', 'bur'], 'Viktor_0.jpg');
@@ -2004,10 +2004,10 @@ const vladimir = new Champion('Vladimir', {
     'Range': ['Both', 'B']
 }, {
     'Teamfight': 35,
-    'Pick': 20,
-    'Hyper': 5,
+    'Pick': 15,
+    'Hyper': 20,
     'Poke': 10,
-    'Split': 30
+    'Split': 20
 }, ['bat', 'bur'], 'Vladimir_0.jpg');
 
 const volibear = new Champion('Volibear', {
@@ -2018,11 +2018,11 @@ const volibear = new Champion('Volibear', {
     'Utility': ['Off', 'B'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 30,
-    'Pick': 25,
+    'Teamfight': 25,
+    'Pick': 20,
     'Hyper': 10,
-    'Poke': 10,
-    'Split': 25
+    'Poke': 15,
+    'Split': 30
 }, ['jug', 'van'], 'Volibear_0.jpg');
 
 const warwick = new Champion('Warwick', {
@@ -2048,10 +2048,10 @@ const xayah = new Champion('Xayah', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 10,
     'Hyper': 25,
-    'Poke': 10,
+    'Poke': 15,
     'Split': 10
 }, ['mar', ''], 'Xayah_0.jpg');
 
@@ -2063,9 +2063,9 @@ const xerath = new Champion('Xerath', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 35,
-    'Pick': 15,
-    'Hyper': 5,
+    'Teamfight': 30,
+    'Pick': 10,
+    'Hyper': 15,
     'Poke': 35,
     'Split': 10
 }, ['art', 'bur'], 'Xerath_0.jpg');
@@ -2078,10 +2078,10 @@ const xinZhao = new Champion('Xin Zhao', {
     'Utility': ['Both', 'D'],
     'Range': ['Abilities', 'D']
 }, {
-    'Teamfight': 20,
-    'Pick': 35,
-    'Hyper': 10,
-    'Poke': 5,
+    'Teamfight': 10,
+    'Pick': 25,
+    'Hyper': 20,
+    'Poke': 10,
     'Split': 30
 }, ['div', 'jug'], 'XinZhao_0.jpg');
 
@@ -2108,10 +2108,10 @@ const yorick = new Champion('Yorick', {
     'Utility': ['Both', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 20,
-    'Pick': 20,
-    'Hyper': 10,
-    'Poke': 10,
+    'Teamfight': 17,
+    'Pick': 12,
+    'Hyper': 11,
+    'Poke': 20,
     'Split': 40
 }, ['jug', ''], 'Yorick_0.jpg');
 
@@ -2123,10 +2123,10 @@ const yuumi = new Champion('Yuumi', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 10,
     'Hyper': 40,
-    'Poke': 15,
+    'Poke': 20,
     'Split': 5
 }, ['enc', ''], 'Yuumi_0.jpg');
 
@@ -2138,11 +2138,11 @@ const zac = new Champion('Zac', {
     'Utility': ['Off', 'C'],
     'Range': ['Abilities', 'C']
 }, {
-    'Teamfight': 35,
-    'Pick': 35,
-    'Hyper': 15,
-    'Poke': 5,
-    'Split': 10
+    'Teamfight': 30,
+    'Pick': 25,
+    'Hyper': 18,
+    'Poke': 11,
+    'Split': 16
 }, ['van', 'div'], 'Zac_0.jpg');
 
 const zed = new Champion('Zed', {
@@ -2156,8 +2156,8 @@ const zed = new Champion('Zed', {
     'Teamfight': 20,
     'Pick': 35,
     'Hyper': 5,
-    'Poke': 15,
-    'Split': 25
+    'Poke': 20,
+    'Split': 20
 }, ['ass', 'bur'], 'Zed_0.jpg');
 
 const ziggs = new Champion('Ziggs', {
@@ -2169,9 +2169,9 @@ const ziggs = new Champion('Ziggs', {
     'Range': ['Both', 'S']
 }, {
     'Teamfight': 35,
-    'Pick': 20,
-    'Hyper': 5,
-    'Poke': 30,
+    'Pick': 10,
+    'Hyper': 10,
+    'Poke': 35,
     'Split': 10
 }, ['art', 'cat'], 'Ziggs_0.jpg');
 
@@ -2183,10 +2183,10 @@ const zilean = new Champion('Zilean', {
     'Utility': ['Both', 'S'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 30,
+    'Teamfight': 25,
     'Pick': 10,
     'Hyper': 30,
-    'Poke': 20,
+    'Poke': 25,
     'Split': 10
 }, ['spec', ''], 'Zilean_0.jpg');
 
@@ -2198,8 +2198,8 @@ const zoe = new Champion('Zoe', {
     'Utility': ['Both', 'C'],
     'Range': ['Both', 'S']
 }, {
-    'Teamfight': 25,
-    'Pick': 20,
+    'Teamfight': 20,
+    'Pick': 25,
     'Hyper': 10,
     'Poke': 35,
     'Split': 10
@@ -2213,9 +2213,9 @@ const zyra = new Champion('Zyra', {
     'Utility': ['Both', 'B'],
     'Range': ['Both', 'A']
 }, {
-    'Teamfight': 35,
+    'Teamfight': 30,
     'Pick': 10,
-    'Hyper': 15,
+    'Hyper': 20,
     'Poke': 30,
     'Split': 10
 }, ['cat', 'bat'], 'Zyra_0.jpg');

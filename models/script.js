@@ -975,7 +975,7 @@ const soloQueueStart = () => {
 
                     // allowing champ repicking
                     if (blueTeam[blueIndex]) {
-                        blueTeam.splice(blueIndex, 1);
+                        blueTeam[blueIndex] = undefined;
                     }
 
                     if (championsPickList[champ]) {
@@ -1011,7 +1011,7 @@ const soloQueueStart = () => {
 
                     // allowing champ repicking
                     if (redTeam[redIndex]) {
-                        redTeam.splice(redIndex, 1);
+                        redTeam[redIndex] = undefined;
                     }
 
                     if (championsPickList[champ]) {
