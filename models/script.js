@@ -890,6 +890,174 @@ const calculateWinratePro = (blueTeamComp, redTeamComp) => {
 
 }
 
+const recommendPick = (pickTeamComp, oppTeamComp, team) => {
+
+    let roles = ['top', 'jg', 'mid', 'adc', 'sup'];
+
+    // crossing out taken positions
+    if (pickTeamComp) {
+        pickTeamComp.champions.forEach(cur => {
+            for (let i = 0; i < roles.length; i++) {
+                if (roles[i] === cur.role) {
+                    roles.splice(i, 1);
+                    break;
+                }
+            }
+        })
+    }
+
+    // only recommend when opponent has picked 
+    if (oppTeamComp && roles.length !== 0) {
+
+        let championsRecEntriesArray = Object.entries(championsPickList);
+
+        let championsRecArray = new Array();
+
+        // opponent team is teamfight
+        if (oppTeamComp.firstMainAttr[0] === 'teamfight') {
+
+            // making 3 recommendations
+            while (championsRecArray.length !== 3) {
+
+                let recChamp;
+                let highestHyper = 0;
+                let recIndex = 0;
+                let index = 0;
+
+                // search for champs with highest hypercarry score
+                championsRecEntriesArray.forEach(cur => {
+                    if (cur[1].teamcomp['Hyper'] > highestHyper && roles.includes(cur[1].role)) {
+                        highestHyper = cur[1].teamcomp['Hyper'];
+                        recChamp = cur[0];
+                        recIndex = index;
+                    }
+                    index++;
+                })
+
+                // add to the recommend array
+                championsRecArray.push(championsPickList[recChamp]);
+                championsRecEntriesArray.splice(recIndex, 1);
+
+            }
+        }
+
+        // opponent team is pick
+        else if (oppTeamComp.firstMainAttr[0] === 'pick') {
+
+            // making 3 recommendations
+            while (championsRecArray.length !== 3) {
+
+                let recChamp;
+                let highestPoke = 0;
+                let recIndex = 0;
+                let index = 0;
+
+                // search for champs with highest poke score
+                championsRecEntriesArray.forEach(cur => {
+                    if (cur[1].teamcomp['Poke'] > highestPoke && roles.includes(cur[1].role)) {
+                        highestPoke = cur[1].teamcomp['Poke'];
+                        recChamp = cur[0];
+                        recIndex = index;
+                    }
+                    index++;
+                })
+
+                // add to the recommend array
+                championsRecArray.push(championsPickList[recChamp]);
+                championsRecEntriesArray.splice(recIndex, 1);
+
+            }
+        }
+
+        // opponent team is hypercarry
+        else if (oppTeamComp.firstMainAttr[0] === 'hypercarry') {
+
+            // making 3 recommendations
+            while (championsRecArray.length !== 3) {
+
+                let recChamp;
+                let highestSplit = 0;
+                let recIndex = 0;
+                let index = 0;
+
+                // search for champs with highest split score
+                championsRecEntriesArray.forEach(cur => {
+                    if (cur[1].teamcomp['Split'] > highestSplit && roles.includes(cur[1].role)) {
+                        highestSplit = cur[1].teamcomp['Split'];
+                        recChamp = cur[0];
+                        recIndex = index;
+                    }
+                    index++;
+                })
+
+                // add to the recommend array
+                championsRecArray.push(championsPickList[recChamp]);
+                championsRecEntriesArray.splice(recIndex, 1);
+
+            }
+        }
+
+        // opponent team is poke
+        else if (oppTeamComp.firstMainAttr[0] === 'poke') {
+
+            // making 3 recommendations
+            while (championsRecArray.length !== 3) {
+
+                let recChamp;
+                let highestTeamfight = 0;
+                let recIndex = 0;
+                let index = 0;
+
+                // search for champs with highest teamfight score
+                championsRecEntriesArray.forEach(cur => {
+                    if (cur[1].teamcomp['Teamfight'] > highestTeamfight && roles.includes(cur[1].role)) {
+                        highestTeamfight = cur[1].teamcomp['Teamfight'];
+                        recChamp = cur[0];
+                        recIndex = index;
+                    }
+                    index++;
+                })
+
+                // add to the recommend array
+                championsRecArray.push(championsPickList[recChamp]);
+                championsRecEntriesArray.splice(recIndex, 1);
+
+            }
+        }
+
+        // opponent team is split
+        else if (oppTeamComp.firstMainAttr[0] === 'split') {
+
+            // making 3 recommendations
+            while (championsRecArray.length !== 3) {
+
+                let recChamp;
+                let highestPick = 0;
+                let recIndex = 0;
+                let index = 0;
+
+                // search for champs with highest pick score
+                championsRecEntriesArray.forEach(cur => {
+                    if (cur[1].teamcomp['Pick'] > highestPick && roles.includes(cur[1].role)) {
+                        highestPick = cur[1].teamcomp['Pick'];
+                        recChamp = cur[0];
+                        recIndex = index;
+                    }
+                    index++;
+                })
+
+                // add to the recommend array
+                championsRecArray.push(championsPickList[recChamp]);
+                championsRecEntriesArray.splice(recIndex, 1);
+
+            }
+        }
+
+        champPickView.recommendInterface(championsRecArray, team);
+
+    }
+}
+
 const proGameStart = () => {
 
     // first 3 bans
@@ -1003,6 +1171,12 @@ const soloQueueStart = () => {
                         // close champ board
                         champPickView.closeChampBoard();
 
+                        // recommend champions for red
+                        recommendPick(redTeamComp, blueTeamComp, 'red');
+
+                        // recommend champions for blue
+                        recommendPick(blueTeamComp, redTeamComp, 'blue');
+
                     }
                 }
 
@@ -1037,11 +1211,17 @@ const soloQueueStart = () => {
                         // close champ board
                         champPickView.closeChampBoard();
 
+                        // recommend champions for blue
+                        recommendPick(blueTeamComp, redTeamComp, 'blue');
+
+                        // recommend champions for red
+                        recommendPick(redTeamComp, blueTeamComp, 'red');
+
                     }
                 }
 
-                console.log(blueTeamComp);
-                console.log(redTeamComp);
+                // console.log(blueTeamComp);
+                // console.log(redTeamComp);
 
                 let checkFull = true;
                 if (blueTeam.includes(undefined)) {
