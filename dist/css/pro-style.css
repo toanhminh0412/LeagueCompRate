@@ -1,0 +1,355 @@
+/*
+Purple: #4B0082
+Orange: #ff9933
+Blue: 	#00BFFF
+Dark Blue: #00008B
+Blue team: #5DADE2
+Red team: #FF0000;
+Drak grey: 	#2F4F4F;
+*/
+
+
+/*---------------------------------*/
+
+
+/* Basic SETUP */
+
+
+/*----------------------------------*/
+
+* {
+    /* Basic setup for any webpage */
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* the width and heigh properties includes content, padding and border */
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* incase user Internet is slow, unable to load Lato, Arial will be used */
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /* make the font rendered in a perfect way */
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+
+/* the clearfix class clear the float of the element, can be used in any situation  */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*---------------------------------*/
+
+
+/* REUSABLE COMPONENT */
+
+
+/*----------------------------------*/
+
+.row {
+    /* can be used in different website design*/
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
+
+/*-----------------*/
+
+
+/* NAVIGATION BAR  */
+
+
+/*-----------------*/
+
+.nav-bar {
+    list-style: none;
+    background-color: #4B0082;
+    height: 50px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-left: 120px;
+    padding-top: 10px;
+}
+
+.nav-bar li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+    border-bottom: 3px solid #ff9933;
+    color: #ff9933;
+}
+
+.nav-bar .signup-btn a {
+    color: #ff9933;
+}
+
+.nav-bar .instruction-btn a {
+    color: #ff9933;
+}
+
+
+/* ProInterface */
+
+.pro-interface {
+    background-image: url('../img/bg/pro-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.pro-interface h1 {
+    text-align: center;
+    color: #ff9933;
+    font-weight: 100;
+    font-size: 250%;
+    margin-top: 7.5%;
+    text-transform: uppercase;
+}
+
+
+/* Past Games */
+
+.past-game-interface {
+    height: 1000px;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.team-inputs {
+    margin-top: 5%;
+}
+
+.region {
+    margin-left: 5%;
+}
+
+.region label {
+    color: #FFFF00;
+    font-size: 150%;
+}
+
+.region select {
+    background-color: #000;
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 100%;
+    color: #fff;
+}
+
+.blue-team {
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+.blue-team label {
+    color: #5DADE2;
+    font-size: 150%;
+}
+
+.blue-team select {
+    background-color: #000;
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 100%;
+    color: #fff;
+}
+
+.blue-team-logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.red-team {
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+.red-team label {
+    color: #FF0000;
+    font-size: 150%;
+}
+
+.red-team select {
+    background-color: #000;
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 100%;
+    color: #fff;
+}
+
+.search-button {
+    margin-top: 5%;
+    text-align: center;
+    border: 1px solid #ff9933;
+    background-color: #ff9933;
+    color: #fff;
+    height: 40px;
+    width: 125px;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-top: 0.4%;
+    font-size: 125%;
+    margin-left: 40%;
+    transition: background-color 0.25s, border 0.25s;
+}
+
+.search-button:hover,
+.search-button:active,
+.search-button:focus {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+
+
+/* PAST GAME SHOW CASE */
+
+.game {
+    margin-top: 5%;
+}
+
+.past-games {
+    display: none;
+}
+
+
+/* Reusable in past game interface */
+
+.show-case {
+    margin-top: 1.5%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 60px;
+    border-top: 1px solid #2F4F4F;
+    border-bottom: 1px solid #2F4F4F;
+    transition: border-top 0.5s, border-bottom 0.5s;
+}
+
+.show-case:hover,
+.show-case:active,
+.show-case:focus {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.game p {
+    color: #fff;
+    margin-left: 2.5%;
+    font-size: 125%;
+}
+
+.week-number {
+    width: 25%;
+    color: #fff;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.week-number span {
+    font-size: 250%;
+    font-weight: 400;
+}
+
+.game-result {
+    position: relative;
+    width: 75%;
+}
+
+.blue {
+    position: relative;
+    width: 42.5%;
+}
+
+.blue p {
+    position: absolute;
+    color: #fff;
+    font-size: 80%;
+    top: 30%;
+    right: 25%;
+}
+
+.blue img {
+    height: 45px;
+    width: 45px;
+    margin-top: 3%;
+    margin-left: 80%;
+}
+
+.game-result .score {
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 80%;
+}
+
+.red {
+    position: relative;
+    width: 42.5%;
+}
+
+.red p {
+    position: absolute;
+    color: #fff;
+    font-size: 80%;
+    float: right;
+    left: 25%;
+    top: 30%;
+}
+
+.red img {
+    height: 45px;
+    width: 45px;
+    margin-top: 3%;
+}
+
+
+/* Live Games */
+
+.live-game-interface {
+    height: 1000px;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}

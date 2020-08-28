@@ -144,8 +144,11 @@ body {
 }
 
 .team-info .blue-team {
-    background-color: #4682B4;
+    background-color: #00BFFF;
     height: 100%;
+    background-image: url(../img/team/cropped_cloud9_logo.png);
+    background-size: cover;
+    background-position: left;
 }
 
 .team-name {
@@ -153,15 +156,38 @@ body {
 }
 
 .team-info .blue-team .team-name h1 {
-    padding-top: 5%;
+    padding-top: 1%;
     padding-bottom: 1%;
     color: #fff;
-    font-size: 250%;
+}
+
+.team-score {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    opacity: 0.7;
+    text-align: center;
+}
+
+.team-score p {
+    color: #fff;
 }
 
 .blue-team {
     border: 1px solid #000;
     width: 30%;
+}
+
+.team-coach {
+    border-top: 1px solid #000;
+}
+
+.team-coach p {
+    color: #fff;
+}
+
+.blue-team .team-coach p {
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
 }
 
 .team-info .score {
@@ -170,28 +196,81 @@ body {
     width: 40%;
 }
 
-.team-info .score p {
-    color: #fff;
+.team-info .score .cur-score {
     text-align: center;
-    font-size: 300%;
-    margin-top: 2%;
+}
+
+.team-info .score .cur-score h1 {
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.team-info .score-box {
+    width: 60%;
+}
+
+.blue-time,
+.red-time {
+    text-align: center;
+    background-color: #A9A9A9;
+    height: 100%;
+    width: 20%;
+    border: 1px solid #000;
+}
+
+.blue-time h1,
+.red-time h1 {
+    color: #fff;
+    font-size: 230%;
+    margin-top: 20%;
+}
+
+.patch {
+    text-align: center;
+}
+
+.patch p {
+    color: #fff;
+    font-size: 80%;
+    padding-bottom: 1.5%;
+}
+
+.phase {
+    text-align: center;
+    background-color: #A9A9A9;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.phase p {
+    color: #fff;
+    font-size: 80%;
 }
 
 .team-info .red-team {
-    background-color: #FF0000;
+    background-color: #00008B;
     height: 100%;
+    background-image: url(../img/team/team-liquid-logo-AC6053E709-seeklogo.com.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .team-info .red-team h1 {
     color: #fff;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 250%;
 }
 
 .red-team {
     border: 1px solid #000;
     width: 30%
+}
+
+.red-team .team-coach p {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
 }
 
 

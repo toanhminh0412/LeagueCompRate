@@ -1,10 +1,13 @@
 const path = require('path');
 
 module.exports = {
-    entry: './models/script.js',
+    entry: {
+        script: "./models/script.js",
+        pro: "./pro-models/pro.js"
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/bundle.js'
+        filename: "js/[name]-bundle.js"
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
