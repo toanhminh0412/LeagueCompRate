@@ -1,4 +1,5 @@
 const path = require('path');
+const port = process.env.PORT || 9000;
 
 module.exports = {
     entry: {
@@ -12,6 +13,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 9000
+        port: port
     }
 };
