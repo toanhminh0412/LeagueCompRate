@@ -5,7 +5,8 @@
     "main": "script.js",
     "scripts": {
         "build": "webpack",
-        "start": "webpack-dev-server"
+        "start": "node app.js",
+        "dev": "webpack-dev-server"
     },
     "repository": {
         "type": "git",
@@ -18,12 +19,14 @@
     },
     "homepage": "https://github.com/toanhminh0412/LeagueCompRate#readme",
     "dependencies": {
+        "express": "^4.17.1",
         "html-loader": "^1.1.0",
         "html-webpack-plugin": "^4.3.0",
         "webpack": "^4.44.0",
         "webpack-cli": "^3.3.12"
     },
     "devDependencies": {
+        "nodemon": "^2.0.4",
         "webpack-dev-server": "^3.11.0"
     }
 }

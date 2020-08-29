@@ -1,5 +1,5 @@
 const path = require('path');
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 3000;
 
 module.exports = {
     entry: {
